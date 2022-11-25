@@ -17,7 +17,6 @@
         android:id="@+id/imv_Back"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:src="@drawable/ic_profilescreen_back"
         android:backgroundTint="#FFFFFF"/>
     
     <TextView
@@ -48,8 +47,7 @@
     <ImageView
         android:layout_marginLeft="16dp"
         android:layout_width="58dp"
-        android:layout_height="58dp"
-        android:src="@drawable/ic_profilescreen_avatar"/>
-    
+        android:layout_height="58dp" />
+
 
 </LinearLayout>
