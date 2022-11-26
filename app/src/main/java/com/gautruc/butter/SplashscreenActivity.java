@@ -24,6 +24,8 @@ public class SplashscreenActivity extends AppCompatActivity {
         //setContentView(R.layout.activity_splashscreen);
         binding = ActivitySplashscreenBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        getSupportActionBar().hide();
     }
 
     public Thread myThread = new Thread(){
