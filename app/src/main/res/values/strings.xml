@@ -2,10 +2,47 @@
     <string name="app_name">Butter</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    
+
+
+    <!--    ButterID Introduction at Homepage-->
+    <string name="home_butterid_intro">Tự thiết kế chiếc bánh của chính mình hoặc gửi tặng những người thân yêu.</string>
+
+    <!--    BottomMenuNavigation-->
     <string name="tab_home">Khám Phá</string>
     <string name="tab_menu">Đặt hàng</string>
     <string name="tab_butterId">Butter ID</string>
     <string name="tab_order">Đơn hàng</string>
     <string name="tab_promotion">Ưu đãi</string>
+
+<!--    Danh sách blog homepage-->
+    <string name="blog1_time">09/11/2022</string>
+    <string name="blog1_name">Bánh ngọt có thể làm giảm stress?</string>
+    <string name="blog1_des">Cuộc sống ngày này của thế hệ Gen Z có rất nhiều đều cần phải lo lắng, bận tâm
+</string>
+
+    <string name="blog2_time">09/11/2022</string>
+    <string name="blog2_name">Giới thiệu về thế giới bánh Brioche</string>
+    <string name="blog2_des">Brioche là một loại bánh mì phong phú và thơm ngon với vị ngọt ngào và thơm mùi bơ.
+</string>
+
+    <string name="blog3_time">09/11/2022</string>
+    <string name="blog3_name">Tất tần tật về cake flour</string>
+    <string name="blog3_des">Bột bánh bông lan (cake flour) là loại bột có kết cấu mềm thường được sử dụng trong làm bánh, đặc biệt là các loại bánh ngọt.
+</string>
+
+    <string name="blog4_time">09/11/2022</string>
+    <string name="blog4_name">Câu chuyện về chiếc bánh mì Baguette</string>
+    <string name="blog4_des">Tản bộ ở Paris vào buổi sáng, bạn sẽ thấy nhiều người bước ra từ các cửa hàng địa phương, trên tay là những chiếc bánh mì.
+</string>
+
+
+<!--    Event khuyến mãi-->
+    <string name="event1_name">Ví MoMo khao mỗi ngày 50k</string>
+    <string name="event2_name">Quà Noel từ Butter</string>
+    <string name="event3_name">Ghé mang đi giảm 15%</string>
+    <string name="event4_name">Halloween giảm 10%</string>
+
+    <!--    Sản phẩm noel-->
+    <string name="line"> <strike> 40.000 </strike> </string>
+
 </resources>

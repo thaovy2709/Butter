@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace 'com.gautruc.butter'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.gautruc.butter"
         minSdk 21
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -27,7 +27,7 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
     buildFeatures{
-        viewBinding true
+        viewBinding true;
     }
 }
 
@@ -39,4 +39,16 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+
+    implementation 'com.github.smarteist:autoimageslider:1.4.0'
+    implementation 'me.relex:circleindicator:2.1.6'
+    implementation 'me.relex:circleindicator:1.3.2'
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation "androidx.recyclerview:recyclerview-selection:1.1.0"
+
+
+
+
+
 }
