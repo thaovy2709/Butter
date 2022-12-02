@@ -1,18 +1,14 @@
-package com.gautruc.fragment;
+package com.gautruc.butter;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.gautruc.butter.R;
-
-public class FragmentMenuNav extends AppCompatActivity {
+public class ProductDetailActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_menunav);
-
-
+        setContentView(R.layout.activity_product_detail);
     }
 }

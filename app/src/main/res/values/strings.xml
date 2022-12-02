@@ -2,10 +2,43 @@
     <string name="app_name">Butter</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    
+
     <string name="tab_home">Khám Phá</string>
     <string name="tab_menu">Đặt hàng</string>
     <string name="tab_butterId">Butter ID</string>
     <string name="tab_order">Đơn hàng</string>
     <string name="tab_promotion">Ưu đãi</string>
+
+    <!--PRODUCT LIST-->
+    <string name="cat_promotion">Khuyến mãi</string>
+    <string name="cat_cookie">Bánh quy</string>
+    <string name="cat_candy">Kẹo</string>
+    <string name="cat_bread">Bánh mì</string>
+    <string name="cat_cake">Bánh kem</string>
+    <string name="cat_drink">Thức uống</string>
+    <string name="dailycookie">Daily Cookie</string>
+    <string name="rate_dailycookie">4.7</string>
+    <string name="storage">Còn 50 sản phẩm</string>
+    <string name="price_dailycookie">35.000</string>
+    <string name="oldprice_dailycookie"><strike>40.000</strike></string>
+    <string name="promotion">Khuyến mãi</string>
+    <string name="add">Thêm</string>
+
+    <!--PRODUCT DETAIL-->
+    <string name="name_dailycookie">Daily Cookie</string>
+    <string name="rate_5.0">5.0</string>
+    <string name="storage_30">Còn 30 sản phẩm</string>
+    <string name="gia">Giá</string>
+    <string name="gia_45">45.000</string>
+    <string name="unit_100gr">/100gr</string>
+    <string name="mota">Mô tả</string>
+    <string name="mota_dailycookie">Daily cookie nóng giòn ra lò mỗi ngày với 3 hương vị chính là mâm xôi hạnh nhân (raspberry), trà xanh (matcha) và vụn chocolate (chocolate chips).</string>
+    <string name="danhgia">Đánh giá</string>
+    <string name="xemthem">Xem thêm</string>
+    <string name="comment1">Phải gọi là “chiến thần” của nhà Butter luôn á, nhờ Daily Cookie mà thành fan “guột” của Butter mấy năm nay</string>
+    <string name="info1">MNgoc Han | 10/11/2022</string>
+    <string name="comment2">Có thể nào đừng ngon như vậy nữa được hong, em thích lắmm</string>
+    <string name="info2">Mai Hoa | 15/10/2022</string>
+    <string name="quantity">0</string>
+    <string name="dathang">Thêm 45.000đ</string>
 </resources>
