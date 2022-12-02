@@ -41,4 +41,9 @@
     <string name="info2">Mai Hoa | 15/10/2022</string>
     <string name="quantity">0</string>
     <string name="dathang">Thêm 45.000đ</string>
+
+    <!--Menu Screen with cart-->
+    <string name="ship">Giao đến</string>
+    <string name="address_uel">Trường Đại học Kinh tế - Luật</string>
+    <string name="totalprice">110.000</string>
 </resources>
