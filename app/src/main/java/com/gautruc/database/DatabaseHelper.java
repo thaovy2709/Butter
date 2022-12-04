@@ -26,6 +26,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return database.rawQuery(sql,null);
     }
 
+    public int getNumOfRows(String TBL_NAME){
+        Cursor cursor = GetData("SELECT * FROM "+ TBL_NAME);
+        int numOfRows = cursor.getCount();
+        cursor.close();
+        return numOfRows;
+    }
+
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
 

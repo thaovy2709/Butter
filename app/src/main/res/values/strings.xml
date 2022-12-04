@@ -36,14 +36,23 @@
     <string name="danhgia">Đánh giá</string>
     <string name="xemthem">Xem thêm</string>
     <string name="comment1">Phải gọi là “chiến thần” của nhà Butter luôn á, nhờ Daily Cookie mà thành fan “guột” của Butter mấy năm nay</string>
-    <string name="info1">MNgoc Han | 10/11/2022</string>
+    <string name="info1">Ngoc Han | 10/11/2022</string>
     <string name="comment2">Có thể nào đừng ngon như vậy nữa được hong, em thích lắmm</string>
     <string name="info2">Mai Hoa | 15/10/2022</string>
-    <string name="quantity">0</string>
+    <string name="quantity">1</string>
     <string name="dathang">Thêm 45.000đ</string>
 
     <!--Menu Screen with cart-->
     <string name="ship">Giao đến</string>
     <string name="address_uel">Trường Đại học Kinh tế - Luật</string>
     <string name="totalprice">110.000</string>
+
+    <!--Ongoing screen-->
+    <string name="head_benefit">LỊCH SỬ ĐƠN HÀNG</string>
+    <string name="ongoing">Đang thực hiện</string>
+    <string name="delivered">Đã giao</string>
+    <string name="orderinfo">2 Bánh Raisin bread, 1 Cookie Oatmeal</string>
+    <string name="status">Đang chuẩn bị</string>
+    <string name="price">100.000</string>
+    <string name="noorder">Chưa có đơn hàng nào đang thực hiện</string>
 </resources>

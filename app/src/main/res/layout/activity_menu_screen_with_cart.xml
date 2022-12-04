@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuSreenActivity"
+    tools:context=".MenuScreenWithCartActivity"
     android:orientation="vertical">
 
     <LinearLayout
@@ -23,7 +23,8 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_weight="1">
 
             <TextView
                 android:layout_width="match_parent"
@@ -94,11 +95,11 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:id="@+id/ll_promotion"
+                android:id="@+id/ll_KhuyenMai"
                 android:layout_weight="1">
 
                 <ImageView
-                    android:id="@+id/imv_promotion"
+                    android:id="@+id/imv_KhuyenMai"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:src="@drawable/promotion"/>
@@ -117,11 +118,11 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:id="@+id/ll_cookie"
+                android:id="@+id/ll_BanhQuy"
                 android:layout_weight="1">
 
                 <ImageView
-                    android:id="@+id/imv_cookie"
+                    android:id="@+id/imv_BanhQuy"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:src="@drawable/cookies"/>
@@ -141,10 +142,10 @@
                 android:orientation="vertical"
                 android:gravity="center"
                 android:layout_weight="1"
-                android:id="@+id/ll_candy">
+                android:id="@+id/ll_Keo">
 
                 <ImageView
-                    android:id="@+id/imv_candy"
+                    android:id="@+id/imv_Keo"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:src="@drawable/candy"/>
@@ -172,11 +173,11 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:id="@+id/ll_bread"
+                android:id="@+id/ll_BanhMi"
                 android:layout_weight="1">
 
                 <ImageView
-                    android:id="@+id/imv_bread"
+                    android:id="@+id/imv_BanhMi"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:src="@drawable/bread"/>
@@ -195,11 +196,11 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:id="@+id/ll_cake"
+                android:id="@+id/ll_BanhKem"
                 android:layout_weight="1">
 
                 <ImageView
-                    android:id="@+id/imv_cake"
+                    android:id="@+id/imv_BanhKem"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:src="@drawable/cake"/>
@@ -218,11 +219,11 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:id="@+id/ll_drink"
+                android:id="@+id/ll_DoUong"
                 android:layout_weight="1">
 
                 <ImageView
-                    android:id="@+id/imv_drink"
+                    android:id="@+id/imv_DoUong"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:src="@drawable/drinks"/>
@@ -247,7 +248,7 @@
         android:padding="16dp">
 
         <TextView
-            android:id="@+id/txt_catName"
+            android:id="@+id/txt_Loai"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/cat_promotion"
@@ -255,72 +256,92 @@
             android:fontFamily="@font/quicksand_bold"/>
 
         <GridView
-            android:id="@+id/gv_productList"
+            android:id="@+id/gv_dsSanPham"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginTop="8dp"/>
+            android:layout_height="300dp"
+            android:layout_marginTop="8dp"
+            android:scrollbars="none"/>
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp">
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center"
+        android:gravity="center">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="left">
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:src="@drawable/shipping"/>
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/ship"
                     android:fontFamily="@font/quicksand_bold"
-                    android:layout_marginStart="8dp"
                     android:textSize="12sp"
+                    android:layout_marginStart="8dp"
                     android:layout_gravity="center"/>
+
             </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/address_uel"
-                android:textSize="14sp"
-                android:fontFamily="@font/quicksand_bold"/>
+                android:fontFamily="@font/quicksand_bold"
+                android:textSize="13sp"
+                android:textColor="@color/neutral_5"/>
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="88dp">
-
+            android:gravity="end"
+            android:layout_gravity="center">
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/primary_3"
-                android:text="@string/totalprice"
-                android:textSize="12sp"
-                android:fontFamily="@font/quicksand_bold"
+                android:id="@+id/btnThem"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:text="@string/price"
+                android:drawableRight="@drawable/next"
                 android:textColor="@color/neutral_5"
-                android:drawableRight="@drawable/next"/>
+                android:textSize="14sp"
+                android:background="@drawable/yellowbutton"
+                android:fontFamily="@font/quicksand_bold"/>
 
         </LinearLayout>
 
-
     </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:itemIconTint="@color/color_menu_nav"
+        app:itemTextColor="@color/color_menu_nav"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:itemTextAppearanceActive="@style/MyBottomNavigationView.TextAppearance"
+        app:itemTextAppearanceInactive="@style/MyBottomNavigationView.TextAppearance"
+        app:menu="@menu/menunavigation" />
+
 
 </LinearLayout>
