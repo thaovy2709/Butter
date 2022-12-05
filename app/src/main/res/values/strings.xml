@@ -2,10 +2,145 @@
     <string name="app_name">Butter</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    
+
     <string name="tab_home">Khám Phá</string>
     <string name="tab_menu">Đặt hàng</string>
     <string name="tab_butterId">Butter ID</string>
     <string name="tab_order">Đơn hàng</string>
     <string name="tab_promotion">Ưu đãi</string>
+
+    <!-- Events khuyến mãi -->
+    <string name="head_events">Events khuyến mãi</string>
+    <string name="head_momo">Ví MoMo khao mỗi ngày 50k</string>
+    <string name="momo_detail">Nhập: MOMOT1122\nThời gian: đến hết ngày 30/11/2022\nNội dung: giảm đến 50k đơn từ 50k........
+    </string>
+    <string name="more">Xem thêm</string>
+
+    <string name="head_noel">Quà Noel từ Butter</string>
+    <string name="noel_detail">Nhập: ButterNha\nThời gian: 10/12 - 28/12\n Nội dung: miễn phí phí vận chuyển.....
+    </string>
+
+    <string name="head_takeaway">Ghé mang đi giảm 15%</string>
+    <string name="takeaway_detail"> Nhập: TAKEAWAY\nThời gian: 1/12 - 31/12\n Áp dụng cho các đơn hàng mang....
+    </string>
+
+    <string name="head_halloween">Ghé mang đi giảm 15%</string>
+    <string name="halloween_detail"> Nhập: HALLOWEEN\nThời gian: 28/10 - 31/10\n Nội dung: khuyến mãi 10% trên tổng....
+    </string>
+    <string name="title_activity_fragement_event_noel">FragementEventNoel</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- Events Fragement -->
+    <string name="head_fregnoel">Halloween cùng “bơ”, chẳng sợ bơ vơ</string>
+    <string name="brand_name">Butter</string>
+    <string name="time">Thời gian</string>
+    <string name="time_noel">28/10/2022 - 30/10/2022</string>
+
+    <string name="condition">Điều kiện</string>
+    <string name="ship_condition">Voucher chỉ áp dụng cho khách hàng nhận được thông báo ưu đãi trên ứng dụng Butter.\nÁp dụng cho đơn giao hàng.
+    </string>
+    <string name="guide">Cách dùng voucher</string>
+    <string name="detail_guide">Cách 1: Bấm sử dụng voucher, sau đó tiến hành các bước đặt đơn hàng trên ứng dụng.\nCách 2: Nhập mã voucher để nhận ưu đãi.</string>
+    <string name="voucher">Thông tin voucher</string>
+    <string name="detail_voucher_noel">Nhập mã: ButterNha\nThời gian áp dụng: 10/12/2022 - 28/12/2022\nMiễn phí vận chuyển cho các đơn đặt giao hàng trên ứng dụng Butter.\nÁp dụng cho đơn hàng trên 70k.</string>
+
+    <string name="head_freghalloween">Freeship 10 đơn hàng - Butter nha</string>
+    <string name="time_halloween">28/10/2022 - 30/10/2022</string>
+    <string name="detail_voucher_halloween">Nhập mã: HALLOWEEN\nThời gian áp dụng:  28/10/2022 - 31/10/2022\nƯu đãi giảm ngay 10% cho mọi hóa đơn đặt hàng trên Butter.\nÁp dụng cho đơn hàng trên 50k..</string>
+
+    <string name="head_fregmomo">Ví MoMo khao mỗi ngày 50k</string>
+    <string name="time_momo">đến hết 31/11/2022</string>
+    <string name="detail_voucher_momo">Nhập mã: MOMOT1122\nThời gian áp dụng: đến hết ngày 30/11/2022
+Ưu đãi giảm đến 50k cho mọi hóa đơn Butter có giá trị từ 50k.\nMiễn phí vận chuyển cho các đơn đặt giao hàng trên ứng dụng Butter.\nÁp dụng đơn thanh toán qua ví điện tử MoMo..</string>
+
+    <string name="head_fregtakeaway">Ghé mang đi - Butter khuyến mãi quá hời</string>
+    <string name="time_takeaway">01/12/2022 - 31/12/2022</string>
+    <string name="detail_voucher_takeaway">Nhập mã: TAKEAWAY\nThời gian áp dụng: đến hết ngày 30/11/2022\nƯu đãi giảm 15% cho tổng đơn hàng đặt mang đi trên ứng dụng Butter.\nÁp dụng cho đơn mang đi từ 2 món.</string>
+
+
+    <!-- Notification list -->
+    <string name="notification">Thông báo</string>
+    <string name="head_noti1">Đơn hàng đang xử lý</string>
+    <string name="time_noti1">14/11/22</string>
+    <string name="detail_noti1">Bạn đã đặt hàng thành công! Hiện, đơn hàng đang được chuẩn bị và sẽ giao đến bạn trước 5 giờ chiều. </string>
+
+    <string name="head_noti2">Giải stress với bánh ngọt?</string>
+    <string name="time_noti2">12/11/22</string>
+    <string name="detail_noti2">Bài blog “Bánh ngọt có thể làm giảm stress?” đã được cập nhật trên app Butter. Cùng tìm hiểu tác dụng giảm stress của bánh ngọt nhé! </string>
+
+    <string name="head_noti3">Ví MoMo tặng mã 50k</string>
+    <string name="time_noti3">10/11/22</string>
+    <string name="detail_noti3">Bài blog “Hiệu lực đến hết 30/11/2022, ví MoMo giảm đến 50k cho đơn từ 50k. Áp dụng cho đơn thanh toán qua ví điện tử MoMo. </string>
+
+    <string name="head_noti4">Thế giới bánh mì Brioche</string>
+    <string name="time_noti4">08/11/22</string>
+    <string name="detail_noti4">Bài blog “Giới thiệu về thế giới bánh mì Brioche” đã được cập nhật trên app Butter. Đọc để hiểu thêm về Brioche bạn nha. </string>
+
+    <string name="head_noti5">Tất tần tật về cake flour</string>
+    <string name="time_noti5">05/11/22</string>
+    <string name="detail_noti5">Bài blog “Tất tần tật về cake flour” đã được cập nhật trên app Butter. Tất cả điều bí ẩn về cake flour đều được bật mí ở đây đó!</string>
+
+    <string name="head_noti6">Halloween giảm ngay 10%</string>
+    <string name="time_noti6">12/11/22</string>
+    <string name="detail_noti6">Hiệu lực đến hết 30/10/2022, Halloween cùng “bơ”, chẳng sợ bơ vơ. Giảm ngay 10% cho mọi hóa đơn.</string>
+    \
+
+    <string name="head_noti7">Chào bạn mới</string>
+    <string name="time_noti7">11/11/22</string>
+    <string name="detail_noti7">Lần đầu đến với Butter, Butter mong bạn có thật nhiều niềm vui nhé! Hãy trải nghiệm Butter ngay hôm nay.</string>
+
+    <!-- Point Exchange Fragement -->
+    <string name="head_exchangepoint">Lịch sử đổi điểm</string>
+    <string name="head_h2exchangepoint">Lịch sử Butter</string>
+    <string name="time_ord1">16:50 - 25/10/2022</string>
+    <string name="order1">Đơn hàng #I17201026722021</string>
+    <string name="point">30</string>
+    <string name="time_ord2">16:50 - 25/10/2022</string>
+    <string name="order2">Đơn hàng #I17201026722021</string>
+    <string name="time_ord3">16:50 - 25/10/2022</string>
+    <string name="order3">Đơn hàng #I17201026722021</string>
+
+    <!-- Benefit -->\
+    <string name="head_benefit">Quyền lợi của bạn</string>
+    <string name="head2_benefit">Tài khoản của bạn</string>
+    <string name="new_memeber">Thành viên mới</string>
+    <string name="detail_new_memeber">Tặng kèm 1 bánh Cookie cho hóa đơn từ 100k trở lên</string>
+
+    <string name="bronze_memeber">Thành viên đồng</string>
+    <string name="detail_bronze_member1">Tặng 1 phần bánh sinh nhật</string>
+    <string name="detail_bronze_member2">Miễn phí 1 bánh ngọt cho đơn hàng trên 70,000đ</string>
+
+    <string name="silver_memeber">Thành viên bạc</string>
+    <string name="detail_silver_member2">Ưu đãi mua 2 tặng 1</string>
+    <string name="detail_silver_member3">Đặc quyền đổi ưu đãi bằng điểm tích lũy</string>
+
+    <string name="gold_memeber">Thành viên vàng</string>
+    <string name="detail_gold_member2">Miễn phí 1 phần nước</string>
+
+    <string name="diamond_memeber">Thành viên kim cương</string>
+    <string name="detail_diamond_member4">Được nhân 2 điểm tích lũy</string>
+    <string name="detail_diamond_member5">Nhận riêng ưu đãi từ Butter và các đối tác khác</string>
+
+    <!-- Favorite dishes -->\
+    <string name="head_favorite">MÓN YÊU THÍCH</string>
+    <string name="name_dishes">Daily cookie</string>
+    <string name="rating">5.0</string>
+    <string name="quality">Còn 20 sản phẩm</string>
+    <string name="price_sale">35.000</string>
+    <string name="price">40.000</string>
+    <string name="promotion">Khuyến mãi</string>
+
+    <!-- Homepage Blog -->
+    <string name="head_blog1">Bánh ngọt làm giảm stress</string>
+    <string name="detail_blog1">Cuộc sống ngày này của thế hệ Gen Z có rất nhiều đều cần phải lo lắng, bận tâm...
+</string>
+    <string name="head_blog">Chuyện nhà Butter</string>
+    <string name="head_blog2">Blog</string>
+
+
+
+
+
 </resources>
