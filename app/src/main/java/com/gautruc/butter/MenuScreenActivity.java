@@ -327,13 +327,13 @@ public class MenuScreenActivity extends AppCompatActivity {
 //            }
 //        });
 
-//        gv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-//                Intent intent = new Intent(mContext,ProductDetailActivity.class);
-//                startActivity(intent);
-//            }
-//        });
+        gv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(MenuScreenActivity.this,ProductDetailActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 

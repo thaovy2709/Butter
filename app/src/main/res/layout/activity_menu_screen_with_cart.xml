@@ -245,7 +245,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp">
 
         <TextView
             android:id="@+id/txt_Loai"
@@ -258,7 +260,7 @@
         <GridView
             android:id="@+id/gv_dsSanPham"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="380dp"
             android:layout_marginTop="8dp"
             android:scrollbars="none"/>
 

@@ -57,9 +57,9 @@ public class ProductAdapter extends BaseAdapter {
 
     private class ViewHolder{
         TextView txt_productName, txt_productRate, txt_productPrice, txt_productOldPrice;
-        ImageView imv_productImage;
+        ImageView imv_productImage, imvLove;
         LinearLayout ll_promotion;
-        Button btn_Add;
+        Button btn_add;
     }
 
     @Override
@@ -75,7 +75,8 @@ public class ProductAdapter extends BaseAdapter {
             holder.txt_productOldPrice = view.findViewById(R.id.txt_productOldPrice);
             holder.imv_productImage = view.findViewById(R.id.imv_productImage);
             holder.ll_promotion = view.findViewById(R.id.ll_promotion);
-            holder.btn_Add = view.findViewById(R.id.btn_add);
+            holder.btn_add = view.findViewById(R.id.btn_add);
+            holder.imvLove = view.findViewById(R.id.imvLove);
             view.setTag(holder);
         }else{
             holder = (ViewHolder) view.getTag();
@@ -89,13 +90,23 @@ public class ProductAdapter extends BaseAdapter {
         int resID = ((Activity)context).getResources().getIdentifier(imgName,"drawable",((Activity)context).getPackageName());
         holder.imv_productImage.setImageResource(resID);
 
-        holder.btn_Add.setOnClickListener(new View.OnClickListener() {
+//        holder.btn_add.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(MenuScreenActivity.this, MenuScreenWithCartActivity.class);
+//                start
+//            }
+//        });
+
+        holder.imvLove.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(context,"Sản phẩm đã được thêm vào giỏ",Toast.LENGTH_LONG).show();
+                holder.imvLove.setImageResource(R.drawable.love);
             }
         });
 
         return view;
+
+
     }
 }

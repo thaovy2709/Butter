@@ -6,4 +6,9 @@
         <item name="fontFamily">@font/quicksand_bold</item>
     </style>
 
+    <style name="ratingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/neutral_3</item>
+        <item name="colorControlActivated">@color/primary_3</item>
+    </style>
+
 </resources>

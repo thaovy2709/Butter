@@ -120,9 +120,10 @@
             android:gravity="end">
 
             <ImageView
+                android:id="@+id/imvLove"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/love"
+                android:src="@drawable/addlove"
                 android:layout_marginBottom="24dp"/>
 
             <Button

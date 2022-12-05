@@ -9,11 +9,11 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="780dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <!--        <ImageView-->
@@ -68,7 +68,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:orientation="horizontal"
-                android:layout_marginTop="8dp">
+                android:layout_marginTop="8dp"
+                android:gravity="center">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -78,10 +79,11 @@
                     android:fontFamily="@font/quicksand_bold"
                     android:layout_weight="1"/>
 
-                <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/love"
+                <ImageView
+                    android:id="@+id/imvLove"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/addlove"
                     android:layout_marginEnd="16dp"/>
 
             </LinearLayout>
@@ -313,7 +315,7 @@
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
+        android:layout_gravity="bottom|end"
         app:itemIconTint="@color/color_menu_nav"
         app:itemTextColor="@color/color_menu_nav"
         android:background="#FFFFFF"

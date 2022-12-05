@@ -82,6 +82,13 @@ public class ProductDetailActivity extends AppCompatActivity {
             }
         });
 
+        binding.imvLove.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                binding.imvLove.setImageResource(R.drawable.love);
+            }
+        });
+
 
     }
 

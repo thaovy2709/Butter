@@ -16,11 +16,36 @@
         android:theme="@style/Theme.Butter"
         tools:targetApi="31">
         <activity
-            android:name=".NoOrderScreen"
+            android:name=".OrderInfoScreen"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ButterIdPackage"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ButterIdCheese"
             android:exported="true">
 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".NoOrderScreen"
+            android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -29,6 +54,7 @@
             android:name=".OngoingScreenActivity"
             android:exported="true">
 
+
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -36,7 +62,6 @@
         <activity
             android:name=".MenuScreenActivity"
             android:exported="true">
-
 
 
             <meta-data
@@ -54,11 +79,7 @@
             android:name=".ProductDetailActivity"
             android:exported="true">
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
             <meta-data
                 android:name="android.app.lib_name"

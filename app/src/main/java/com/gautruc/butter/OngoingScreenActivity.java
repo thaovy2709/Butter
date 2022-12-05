@@ -2,8 +2,10 @@ package com.gautruc.butter;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 
@@ -50,6 +52,14 @@ public class OngoingScreenActivity extends AppCompatActivity {
                 btnOngoing.setBackgroundResource(R.drawable.graybutton);
                 btnDelivered.setTextColor(OngoingScreenActivity.this.getResources().getColor(R.color.primary_5));
                 btnOngoing.setTextColor(OngoingScreenActivity.this.getResources().getColor(R.color.neutral_4));
+            }
+        });
+
+        lvOrder.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(OngoingScreenActivity.this,OrderInfoScreen.class);
+                startActivity(intent);
             }
         });
     }
