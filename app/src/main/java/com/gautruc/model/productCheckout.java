@@ -1,23 +1,21 @@
 package com.gautruc.model;
 
-public class productHomepage {
+public class productCheckout {
     private int photo;
     private String name;
-    private String rating;
-    private String stock;
     private double price;
     private double oldPrice;
+    private int productQuantity;
 
-    public productHomepage(int photo, String name, String rating, String stock, double price, double oldPrice) {
+    public productCheckout(int photo, String name, double price, double oldPrice, int productQuantity) {
         this.photo = photo;
         this.name = name;
-        this.rating = rating;
-        this.stock = stock;
         this.price = price;
         this.oldPrice = oldPrice;
+        this.productQuantity = productQuantity;
     }
 
-    public  int getPhoto() {
+    public int getPhoto() {
         return photo;
     }
 
@@ -25,7 +23,7 @@ public class productHomepage {
         this.photo = photo;
     }
 
-    public  String getName() {
+    public String getName() {
         return name;
     }
 
@@ -33,23 +31,7 @@ public class productHomepage {
         this.name = name;
     }
 
-    public  String getRating() {
-        return rating;
-    }
-
-    public void setRating(String rating) {
-        this.rating = rating;
-    }
-
-    public  String getStock() {
-        return stock;
-    }
-
-    public void setStock(String stock) {
-        this.stock = stock;
-    }
-
-    public  double getPrice() {
+    public double getPrice() {
         return price;
     }
 
@@ -57,11 +39,19 @@ public class productHomepage {
         this.price = price;
     }
 
-    public  double getOldPrice() {
+    public double getOldPrice() {
         return oldPrice;
     }
 
     public void setOldPrice(double oldPrice) {
         this.oldPrice = oldPrice;
+    }
+
+    public int getProductQuantity() {
+        return productQuantity;
+    }
+
+    public void setProductQuantity(int productQuantity) {
+        this.productQuantity = productQuantity;
     }
 }

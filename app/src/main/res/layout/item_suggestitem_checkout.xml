@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_suggestitem"
+    android:layout_marginBottom="16dp"
+    android:layout_marginEnd="8dp">
+    
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/toastlava1"
+        android:layout_gravity="center"
+        android:id="@+id/imv_suggested"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_nameSuggested"
+            android:layout_marginStart="8dp"
+            android:text="Toast lava salted egg"
+            android:textSize="14sp"
+            android:fontFamily="@font/quicksand_bold"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/neutral_5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_priceSuggested"
+            android:layout_marginStart="8dp"
+            android:text="65000"
+            android:textSize="14sp"
+            android:fontFamily="@font/quicksand_medium"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/neutral_5"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:id="@+id/btn_addSuggested"
+            android:text="Thêm vào"
+            android:textAllCaps="false"
+            android:fontFamily="@font/quicksand_bold"
+            android:layout_gravity="end"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/primary_4"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/item_buttoncheckout"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

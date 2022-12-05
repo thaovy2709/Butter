@@ -1,17 +1,18 @@
 package com.gautruc.butter;
 
-import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
+import android.os.Bundle;
+import android.view.View;
+
 import com.gautruc.adapter.blogHomepageAdapter;
 import com.gautruc.adapter.categoryHomepageAdapter;
 import com.gautruc.adapter.eventHomepageAdapter;
 import com.gautruc.adapter.sliderAdapter;
-import com.gautruc.butter.databinding.ActivityHomepageBinding;
+import com.gautruc.butter.databinding.ActivityClientHomepageBinding;
 import com.gautruc.model.blogHomepage;
 import com.gautruc.model.categoryHomepage;
 import com.gautruc.model.eventHomepage;
@@ -23,17 +24,15 @@ import java.util.List;
 
 import me.relex.circleindicator.CircleIndicator;
 
-public class HomepageActivity extends AppCompatActivity {
+public class ClientHomepageActivity extends AppCompatActivity {
 
-
-    ActivityHomepageBinding binding;
+    ActivityClientHomepageBinding binding;
 
     //Tạo recycle view cho danh sách sản phẩm
     RecyclerView rcvCategory;
-    categoryHomepageAdapter categoryHomepageAdapter;
-    eventHomepageAdapter eventHomepageAdapter;
+    com.gautruc.adapter.categoryHomepageAdapter categoryHomepageAdapter;
     blogHomepageAdapter blogHomepageAdapter;
-    ArrayList<productHomepage> suggestProductList;
+    eventHomepageAdapter eventHomepageAdapter;
     ArrayList<productHomepage> noelProductList;
     ArrayList<eventHomepage> eventHomepageList;
     ArrayList<blogHomepage> blogHomepageList;
@@ -45,23 +44,23 @@ public class HomepageActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_homepage);
+        //setContentView(R.layout.activity_client_homepage);
 
-
-        binding = ActivityHomepageBinding.inflate(getLayoutInflater());
+        binding = ActivityClientHomepageBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        loadEvent();
-        loadProduct();
-        addEvent();
-
+        loadData();
+        loadEvents();
+        bannerEvent();
+        addEvents();
     }
 
-    private void loadEvent() {
+    private void loadEvents() {
+        //load dữ liệu blog + events
         eventHomepageList = new ArrayList<>();
         eventHomepageList.add(new eventHomepage(R.drawable.momovuong, "Ví MoMo khao mỗi ngày 50k"));
         eventHomepageList.add(new eventHomepage(R.drawable.freeshipnoelbannerdoc, "Quà Noel từ Butter"));
-        eventHomepageAdapter = new eventHomepageAdapter(HomepageActivity.this, R.layout.item_event_homepage, eventHomepageList);
+        eventHomepageAdapter = new eventHomepageAdapter(ClientHomepageActivity.this, R.layout.item_event_homepage, eventHomepageList);
 
         binding.gvEventListHomepage.setAdapter(eventHomepageAdapter);
 
@@ -70,51 +69,31 @@ public class HomepageActivity extends AppCompatActivity {
         blogHomepageList.add(new blogHomepage(R.drawable.croissanttrungmuoi2,"09/11/2022", "Giới thiệu về thế giới bánh Brioche", "Brioche là một loại bánh mì phong phú và thơm ngon với vị ngọt ngào và thơm mùi bơ."));
 
 
-        blogHomepageAdapter = new blogHomepageAdapter(HomepageActivity.this, R.layout.item_blog_homepage, blogHomepageList);
+        blogHomepageAdapter = new blogHomepageAdapter(ClientHomepageActivity.this, R.layout.item_blog_homepage, blogHomepageList);
 
         binding.gvBlogListHomepage.setAdapter(blogHomepageAdapter);
     }
 
+    private void addEvents() {
+        //BẤM VÀO XEM SẢN PHẨM -> intent product detail
 
-    private void loadProduct() {
+        //BẤM VÀO XEM BLOG -> intent blog detail
+
+        //BẤM VÀO XEM EVENT -> intent event
+
+    }
+
+    private void loadData() {
         rcvCategory = findViewById(R.id.rcv_product);
-        categoryHomepageAdapter = new categoryHomepageAdapter(HomepageActivity.this);
+        categoryHomepageAdapter = new categoryHomepageAdapter(ClientHomepageActivity.this);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, false);
         rcvCategory.setLayoutManager(linearLayoutManager);
 
         categoryHomepageAdapter.setData(getListCategory());
         rcvCategory.setAdapter(categoryHomepageAdapter);
-
-
-
-
     }
 
-    //init data
-    private List<categoryHomepage> getListCategory(){
-
-        List<categoryHomepage> listCategory = new ArrayList<>();
-
-        noelProductList = new ArrayList<productHomepage>();
-        noelProductList.add(new productHomepage(R.drawable.dailycookie,"Daily Cookie","4.7","Còn 8 sản phẩm", 35000, 40000));
-        noelProductList.add(new productHomepage(R.drawable.brownsugar,"Ceridwen","4.7","Còn 8 sản phẩm", 38000, 39500));
-        noelProductList.add(new productHomepage(R.drawable.croissant,"Croissant","4.7","Còn 8 sản phẩm", 20000, 35000));
-        noelProductList.add(new productHomepage(R.drawable.coldbrewmocha,"Cold mocha","4.8","Còn 8 sản phẩm", 50000, 65000));
-        noelProductList.add(new productHomepage(R.drawable.cookiecoffee,"Cookie coffee","4.9","Còn 7 sản phẩm", 35000, 50000));
-        noelProductList.add(new productHomepage(R.drawable.cutewormchocolate,"Chocolate","4.7","Còn 5 sản phẩm", 40000, 55000));
-
-        suggestProductList = new ArrayList<productHomepage>();
-        suggestProductList.add(new productHomepage(R.drawable.dailycookie,"Daily Cookie","4.7","Còn 5 sản phẩm", 35000, 40000));
-        suggestProductList.add(new productHomepage(R.drawable.croissanttrungmuoi1,"Croissant","4.7","Còn 5 sản phẩm", 350000,45000));
-        suggestProductList.add(new productHomepage(R.drawable.oreocheese1,"Oreo cheese","4.7","Còn 4 sản phẩm", 35000, 48000));
-        suggestProductList.add(new productHomepage(R.drawable.brioche1,"Brioche","5.0","Còn 2 sản phẩm", 25000, 35000));
-
-        listCategory.add(new categoryHomepage("Noel của bạn", R.drawable.homepagesanta, noelProductList));
-        listCategory.add(new categoryHomepage("Butter bạn sẽ thích", R.drawable.shipping, suggestProductList));
-        return listCategory;
-    }
-
-    private void addEvent() {
+    private void bannerEvent() {
         viewPager = findViewById(R.id.viewpager);
         circleIndicator = findViewById(R.id.circle_indicator);
 
@@ -125,36 +104,31 @@ public class HomepageActivity extends AppCompatActivity {
         slideradapter.registerDataSetObserver(circleIndicator.getDataSetObserver());
     }
 
-    //Init banner data
     private List<sliderBanner> getListBanner() {
-        List<sliderBanner> list = new ArrayList<>();
-        list.add(new sliderBanner(R.drawable.bannerngangnoel));
-        list.add(new sliderBanner(R.drawable.vimomokhaomoingaybannerngang));
-        list.add(new sliderBanner(R.drawable.ghemangdi));
-        list.add(new sliderBanner(R.drawable.halloweenngang));
+            List<sliderBanner> list = new ArrayList<>();
+            list.add(new sliderBanner(R.drawable.bannerngangnoel));
+            list.add(new sliderBanner(R.drawable.vimomokhaomoingaybannerngang));
+            list.add(new sliderBanner(R.drawable.ghemangdi));
+            list.add(new sliderBanner(R.drawable.halloweenngang));
 
-        return list;
+            return list;
     }
 
-    //Init event
-//    voucherCheckouts = new ArrayList<>();
-//
-//        voucherCheckouts.add(new voucherCheckout(R.drawable.voucher1));
-//        voucherCheckouts.add(new voucherCheckout(R.drawable.voucher2));
-//        voucherCheckouts.add(new voucherCheckout(R.drawable.voucher3));
-//        voucherCheckouts.add(new voucherCheckout(R.drawable.voucher4));
-//
-//    adapter = new voucherCheckoutAdapter(VoucherCheckoutFragment.this, R.layout.item_voucher_checkout, voucherCheckouts);
-//
-//
-//        binding.lvVoucher.setAdapter(adapter);
 
+    private List<categoryHomepage> getListCategory() {
+        List<categoryHomepage> listCategory = new ArrayList<>();
 
+        noelProductList = new ArrayList<productHomepage>();
+        noelProductList.add(new productHomepage(R.drawable.dailycookie,"Daily Cookie","4.7","Còn 8 sản phẩm", 35000, 40000));
+        noelProductList.add(new productHomepage(R.drawable.brownsugar,"Ceridwen","4.7","Còn 8 sản phẩm", 38000, 39500));
+        noelProductList.add(new productHomepage(R.drawable.croissant,"Croissant","4.7","Còn 8 sản phẩm", 20000, 35000));
+        noelProductList.add(new productHomepage(R.drawable.coldbrewmocha,"Cold mocha","4.8","Còn 8 sản phẩm", 50000, 65000));
+        noelProductList.add(new productHomepage(R.drawable.cookiecoffee,"Cookie coffee","4.9","Còn 7 sản phẩm", 35000, 50000));
+        noelProductList.add(new productHomepage(R.drawable.cutewormchocolate,"Chocolate","4.7","Còn 5 sản phẩm", 40000, 55000));
 
+        listCategory.add(new categoryHomepage("Noel của bạn", R.drawable.homepagesanta, noelProductList));
 
-
-
+        return listCategory;
+    }
 
 }
-
-
