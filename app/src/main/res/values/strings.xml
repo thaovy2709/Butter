@@ -2,10 +2,18 @@
     <string name="app_name">Butter</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    
+
     <string name="tab_home">Khám Phá</string>
     <string name="tab_menu">Đặt hàng</string>
     <string name="tab_butterId">Butter ID</string>
     <string name="tab_order">Đơn hàng</string>
     <string name="tab_promotion">Ưu đãi</string>
+
+    <!--Nhập mã OTP-->
+    <string name="verify_otp_title">Xác nhận OTP</string>
+    <string name="verify_otp_description1">Mã xác nhận OTP đã được gửi đến:</string>
+    <string name="verify_otp_description2">Vui lòng nhập mã xác nhận</string>
+    <string name="verify_otp_btn">Xác nhận OTP</string>
+    <string name="verify_otp_notreceive">Không nhận được tin nhắn?</string>
+    <string name="verify_otp_resendotp">Gửi lại mã OTP</string>
 </resources>

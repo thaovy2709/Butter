@@ -1,4 +1,4 @@
-package com.gautruc.fragment;
+package com.gautruc.butter;
 
 public class FragmentAddAddress {
 }
