@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderInfoScreen"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="12dp"
+        android:paddingLeft="12dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imvBacktoOngoing"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back" />
+
+        <TextView
+            android:id="@+id/txtVoucherDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="THÔNG TIN ĐƠN HÀNG"
+            android:textColor="@color/neutral_5"
+            android:textSize="20sp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:src="@drawable/shipping"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="BUTTER"
+                                android:layout_marginStart="8dp"
+                                android:textColor="@color/primary_3"
+                                android:fontFamily="@font/quicksand_bold"
+                                android:textSize="16sp"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Thứ bảy, 12 tháng 11, 11:11"
+                                    android:fontFamily="@font/quicksand_regular"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/neutral_5"
+                                    android:textAlignment="textEnd"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Đã giao đơn hàng"
+                                android:fontFamily="@font/quicksand_bold"
+                                android:textColor="@color/neutral_5"
+                                android:textSize="14sp"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Mã đơn hàng #I17201026720510"
+                                    android:fontFamily="@font/quicksand_regular"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/neutral_5"
+                                    android:textAlignment="textEnd"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#E3E4E5"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bạn thấy đơn hàng như thế nào?"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:textColor="@color/neutral_5"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="(1 sao: Tệ, 5 sao: Tốt)"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:textColor="@color/neutral_5"/>
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:backgroundTint="@color/primary_3"
+                        android:numStars="5"
+                        android:stepSize="0.5"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/view"
+                        android:theme="@style/ratingBar"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E3E4E5"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/shipper"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nguyễn Hồng Thắng"
+                            android:fontFamily="@font/quicksand_bold"
+                            android:textSize="16sp"
+                            android:textColor="@color/neutral_5"
+                            android:layout_marginStart="8dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="05D1-09029"
+                            android:fontFamily="@font/quicksand_regular"
+                            android:textSize="16sp"
+                            android:textColor="@color/neutral_4"
+                            android:layout_marginStart="8dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E3E4E5"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thông tin giao hàng"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:textColor="@color/neutral_4"
+                        android:textSize="16sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:src="@drawable/shipping"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Vị trí cửa hàng"
+                                    android:textSize="12sp"
+                                    android:fontFamily="@font/quicksand_regular"
+                                    android:textColor="@color/neutral_4"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Butter Cantavil, Quận 2"
+                                    android:textSize="14sp"
+                                    android:fontFamily="@font/quicksand_bold"
+                                    android:textColor="@color/neutral_4"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/verticalline"
+                            android:layout_marginStart="16dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:src="@drawable/address"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Địa điểm giao hàng"
+                                    android:textSize="12sp"
+                                    android:fontFamily="@font/quicksand_regular"
+                                    android:textColor="@color/neutral_4"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Trường Đại học Kinh tế - Luật"
+                                    android:textSize="14sp"
+                                    android:fontFamily="@font/quicksand_bold"
+                                    android:textColor="@color/neutral_4"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E3E4E5"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chi tiết đơn hàng"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/neutral_4"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Cookie Oatmeal"
+                                android:fontFamily="@font/quicksand_regular"
+                                android:textSize="14sp"
+                                android:textColor="@color/neutral_5"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="1"
+                                android:textAlignment="textEnd"
+                                android:fontFamily="@font/quicksand_regular"
+                                android:textSize="14sp"
+                                android:textColor="@color/neutral_5"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Daily cookie - Raspberry"
+                                android:fontFamily="@font/quicksand_regular"
+                                android:textSize="14sp"
+                                android:textColor="@color/neutral_5"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="2"
+                                android:textAlignment="textEnd"
+                                android:fontFamily="@font/quicksand_regular"
+                                android:textSize="14sp"
+                                android:textColor="@color/neutral_5"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E3E4E5"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chi tiết thanh toán"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/neutral_4"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Giá"
+                                android:fontFamily="@font/quicksand_regular"
+                                android:textSize="14sp"
+                                android:textColor="@color/neutral_5"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="110.000"
+                                android:textAlignment="textEnd"
+                                android:fontFamily="@font/quicksand_regular"
+                                android:textSize="14sp"
+                                android:textColor="@color/neutral_5"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Phí giao hàng"
+                                android:fontFamily="@font/quicksand_regular"
+                                android:textSize="14sp"
+                                android:textColor="@color/neutral_5"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="10.000"
+                                android:textAlignment="textEnd"
+                                android:fontFamily="@font/quicksand_regular"
+                                android:textSize="14sp"
+                                android:textColor="@color/neutral_5"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tổng cộng"
+                                android:fontFamily="@font/quicksand_bold"
+                                android:textSize="14sp"
+                                android:textColor="@color/neutral_5"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="110.000"
+                                android:textAlignment="textEnd"
+                                android:fontFamily="@font/quicksand_bold"
+                                android:textSize="14sp"
+                                android:textColor="@color/neutral_5"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
