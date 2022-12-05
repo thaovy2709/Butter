@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityButterID"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:paddingRight="12dp"
+        android:paddingLeft="12dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/address"
+            android:layout_marginEnd="10dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giao hàng tới:"
+                android:textSize="8sp"
+                android:textColor="@color/neutral_4"
+                android:fontFamily="@font/quicksand_bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trường Đại học Kinh tế - Luật"
+                android:textColor="@color/neutral_5"
+                android:textSize="10sp"
+                android:fontFamily="@font/quicksand_bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <ImageView
+                android:id="@+id/imv_Search"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:src="@drawable/search"
+                android:layout_marginLeft="50dp"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:id="@+id/imv_Wishlist"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/love"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:id="@+id/imv_Notification1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/notification"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:id="@+id/imv_Profile1"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:src="@drawable/userheader"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="#E3E4E5"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SÁNG TẠO BUTTER CỦA RIÊNG BẠN"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:fontFamily="@font/quicksand_bold"
+        android:textSize="14dp"
+        android:textColor="@color/secondary_5"/>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/hello"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"/>
+
+    <ImageView
+        android:layout_width="408dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="172dp"
+            android:src="@drawable/groupkem"
+            android:layout_marginTop="8dp"/>
+
+        <ImageView
+            android:id="@+id/imv_Cookie"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:foregroundGravity="center"
+            android:src="@drawable/cookie"
+            android:layout_marginTop="24dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bắt đầu bằng cách chọn kích cỡ"
+        android:fontFamily="@font/quicksand_bold"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:textColor="@color/neutral_4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:weightSum="16">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginEnd="64dp"
+            android:id="@+id/ll_SizeLarge"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/imv_SizeLarge"
+                android:layout_width="55dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lớn"
+                android:textSize="10dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:textColor="@color/neutral_4"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/ll_SizeMini"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/imv_SizeMini"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/sizemini"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Nhỏ"
+                android:fontFamily="@font/quicksand_bold"
+                android:textSize="10dp"
+                android:textColor="@color/neutral_4"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BƯỚC 1: CHỌN KÍCH CỠ"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:fontFamily="@font/quicksand_bold"
+        android:textColor="@color/neutral_4"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cornerRadius="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="260dp"
+        android:text="TIẾP"
+        android:backgroundTint="@color/neutral_3"
+        app:icon="@drawable/next"
+        app:iconGravity="textEnd"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="#E3E4E5"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="25dp"
+            android:layout_height="25dp">
+
+            <ImageView
+                android:id="@+id/imv_ChooseSize"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/chosensize"
+                android:layout_column="0" />
+
+            <ImageView
+                android:id="@+id/imv_ChooseCream"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_column="1"
+                android:src="@drawable/cream" />
+
+            <ImageView
+                android:id="@+id/imv_ChooseDip"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/dip"
+                android:layout_column="2"/>
+            <ImageView
+                android:id="@+id/imv_ChooseCheese"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/cheese"
+                android:layout_column="3"/>
+            <ImageView
+                android:id="@+id/imv_Packaging"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/packaging"
+                android:layout_column="4"/>
+        </TableRow>
+    </TableLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="#E3E4E5"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="bottom|end"
+        app:itemIconTint="@color/color_menu_nav"
+        app:itemTextColor="@color/color_menu_nav"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:itemTextAppearanceActive="@style/MyBottomNavigationView.TextAppearance"
+        app:itemTextAppearanceInactive="@style/MyBottomNavigationView.TextAppearance"
+        app:menu="@menu/menunavigation"/>
+
+</LinearLayout>

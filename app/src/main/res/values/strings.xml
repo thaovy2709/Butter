@@ -101,4 +101,11 @@
     //Chọn phương thức thanh toán
     <string name="moreOption">Vui lòng chọn phương thức thanh toán phù hợp cho đơn hàng của bạn</string>
 
+    <!--Nhập mã OTP-->
+    <string name="verify_otp_title">Xác nhận OTP</string>
+    <string name="verify_otp_description1">Mã xác nhận OTP đã được gửi đến:</string>
+    <string name="verify_otp_description2">Vui lòng nhập mã xác nhận</string>
+    <string name="verify_otp_btn">Xác nhận OTP</string>
+    <string name="verify_otp_notreceive">Không nhận được tin nhắn?</string>
+    <string name="verify_otp_resendotp">Gửi lại mã OTP</string>
 </resources>
