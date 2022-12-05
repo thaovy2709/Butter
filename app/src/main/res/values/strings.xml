@@ -2,10 +2,103 @@
     <string name="app_name">Butter</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    
+
+
+    <!--    ButterID Introduction at Homepage-->
+    <string name="home_butterid_intro">Tự thiết kế chiếc bánh của chính mình hoặc gửi tặng những người thân yêu.</string>
+
+    <!--    BottomMenuNavigation-->
     <string name="tab_home">Khám Phá</string>
     <string name="tab_menu">Đặt hàng</string>
     <string name="tab_butterId">Butter ID</string>
     <string name="tab_order">Đơn hàng</string>
     <string name="tab_promotion">Ưu đãi</string>
+
+    <!--    Danh sách blog homepage-->
+    <string name="blog1_time">09/11/2022</string>
+    <string name="blog1_name">Bánh ngọt có thể làm giảm stress?</string>
+    <string name="blog1_des">Cuộc sống ngày này của thế hệ Gen Z có rất nhiều đều cần phải lo lắng, bận tâm
+</string>
+
+    <string name="blog2_time">09/11/2022</string>
+    <string name="blog2_name">Giới thiệu về thế giới bánh Brioche</string>
+    <string name="blog2_des">Brioche là một loại bánh mì phong phú và thơm ngon với vị ngọt ngào và thơm mùi bơ.
+</string>
+
+    <string name="blog3_time">09/11/2022</string>
+    <string name="blog3_name">Tất tần tật về cake flour</string>
+    <string name="blog3_des">Bột bánh bông lan (cake flour) là loại bột có kết cấu mềm thường được sử dụng trong làm bánh, đặc biệt là các loại bánh ngọt.
+</string>
+
+    <string name="blog4_time">09/11/2022</string>
+    <string name="blog4_name">Câu chuyện về chiếc bánh mì Baguette</string>
+    <string name="blog4_des">Tản bộ ở Paris vào buổi sáng, bạn sẽ thấy nhiều người bước ra từ các cửa hàng địa phương, trên tay là những chiếc bánh mì.
+</string>
+
+
+    <!--    Event khuyến mãi-->
+    <string name="event1_name">Ví MoMo khao mỗi ngày 50k</string>
+    <string name="event2_name">Quà Noel từ Butter</string>
+    <string name="event3_name">Ghé mang đi giảm 15%</string>
+    <string name="event4_name">Halloween giảm 10%</string>
+
+    <!--    Sản phẩm noel-->
+    <string name="line"> <strike> 40.000 </strike> </string>
+
+    <!--    Checkout page-->
+    <string name="product1_name">Daily Cookie</string>
+    <string name="product1_price">70.000</string>
+    <string name="product1_oldPrice"><strike>80.000</strike></string>
+    <string name="product2_name">Cookie Oatmeal</string>
+    <string name="product2_price">40.000</string>
+    <string name="product2_oldPrice"><strike>50.000</strike></string>
+    <string name="product_promotion">Khuyến mãi</string>
+
+    <!--    OngoingTracking-->
+    <string name="orderId">Đơn hàng #I17201026722021</string>
+    <string name="orderCustomer">Người nhận: Tiên Huỳnh</string>
+    <string name="orderAddress">Địa chỉ: Trường Đại học Kinh tế - Luật</string>
+
+    <!--    Checkout success-->
+    <string name="checkout_success">Bạn đã đặt hàng thành công và tích lũy được 30 Butter. Đơn hàng của bạn sẽ được giao trước 5 giờ chiều hôm nay.</string>
+    <!--    Checkout địa điểm-->
+    <string name="addressNow">Trường Đại học Kinh tế - Luật</string>
+    <string name="addressHome">12 Đồng Khởi, Quận 1, TPHCM</string>
+    <string name="addressFirm">Takashimaya, Saigon Centre, Quận 1, TPHCM</string>
+
+    <string-array name="city_array">
+        <item>Hà Nội</item>
+        <item>TPHCM</item>
+        <item>Đà Nẵng</item>
+        <item>Quy Nhơn</item>
+        <item>Nghệ An</item>
+    </string-array>
+
+    <string-array name="district_array">
+        <item>Quận 1</item>
+        <item>Quận 3</item>
+        <item>Quận 4</item>
+        <item>Quận 5</item>
+        <item>Quận 6</item>
+        <item>Quận 7</item>
+        <item>Quận 8</item>
+        <item>Quận 10</item>
+        <item>Quận Gò Vấp</item>
+        <item>Thành phố Thủ Đức</item>
+    </string-array>
+
+    <string-array name="ward_array">
+        <item>Phường 1</item>
+        <item>Phường 2</item>
+        <item>Phường 3</item>
+        <item>Phường 4</item>
+        <item>Phường 5</item>
+        <item>Phường 6</item>
+        <item>Phường Linh Tây</item>
+        <item>Phường Linh Đông</item>
+    </string-array>
+
+    //Chọn phương thức thanh toán
+    <string name="moreOption">Vui lòng chọn phương thức thanh toán phù hợp cho đơn hàng của bạn</string>
+
 </resources>
