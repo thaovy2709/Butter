@@ -25,10 +25,7 @@
         <activity
             android:name=".FavoriteDishesListScreen"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
 
             <meta-data
                 android:name="android.app.lib_name"
@@ -44,7 +41,8 @@
         </activity>
         <activity
             android:name=".FragementEventMomo"
-            android:exported="false">
+            android:exported="true">
+
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -58,14 +56,19 @@
         </activity>
         <activity
             android:name=".FragementEventNoel"
-            android:exported="false">
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".FragementBenefitPromotion"
-            android:exported="false">
+            android:exported="true">
+
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
