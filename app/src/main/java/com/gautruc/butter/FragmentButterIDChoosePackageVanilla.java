@@ -3,14 +3,15 @@ package com.gautruc.butter;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-public class FragmentButterIDChoosePackage extends AppCompatActivity {
-    
+public class FragmentButterIDChoosePackageVanilla extends AppCompatActivity {
+
     LinearLayout llBag, llBox1c, llBoxgiay6c, llBoxkieng6c;
     ImageView imvBag, imvBox1c, imvBoxgiay6c, imvBoxkieng6c, imvCookie;
     Button btnConfirmOrder, btnBack;
@@ -18,24 +19,22 @@ public class FragmentButterIDChoosePackage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fragment_butter_idchoose_package);
+        setContentView(R.layout.activity_fragment_butter_idchoose_package_vanilla);
 
-
-        ImageView imvMain = (ImageView) findViewById(R.id.imv_Main);
+        ImageView imvMainCookie = (ImageView) findViewById(R.id.imv_Main);
 
         Bundle bundle = getIntent().getExtras();
         if (bundle != null)
         {
             int step4 = bundle.getInt("step4");
-            imvMain.setImageResource(step4);
+            imvMainCookie.setImageResource(step4);
         }
-        
-        linkViews();
+
+        linkView();
         addEvents();
     }
 
     private void addEvents() {
-
         llBag.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -48,7 +47,7 @@ public class FragmentButterIDChoosePackage extends AppCompatActivity {
                 btnConfirmOrder.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intent = new Intent(FragmentButterIDChoosePackage.this,FragmentButterIDConfirmOrder.class);
+                        Intent intent = new Intent(FragmentButterIDChoosePackageVanilla.this,FragmentButterIDConfirmOrder.class);
                         intent.putExtra("step5", R.drawable.bag1);
                         startActivity(intent);
                     }
@@ -68,7 +67,7 @@ public class FragmentButterIDChoosePackage extends AppCompatActivity {
                 btnConfirmOrder.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intent = new Intent(FragmentButterIDChoosePackage.this,FragmentButterIDConfirmOrder.class);
+                        Intent intent = new Intent(FragmentButterIDChoosePackageVanilla.this,FragmentButterIDConfirmOrder.class);
                         intent.putExtra("step5", R.drawable.box1);
                         startActivity(intent);
                     }
@@ -88,7 +87,7 @@ public class FragmentButterIDChoosePackage extends AppCompatActivity {
                 btnConfirmOrder.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intent = new Intent(FragmentButterIDChoosePackage.this,FragmentButterIDConfirmOrder.class);
+                        Intent intent = new Intent(FragmentButterIDChoosePackageVanilla.this,FragmentButterIDConfirmOrder.class);
                         intent.putExtra("step5", R.drawable.boxgiay6);
                         startActivity(intent);
                     }
@@ -108,7 +107,7 @@ public class FragmentButterIDChoosePackage extends AppCompatActivity {
                 btnConfirmOrder.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intent = new Intent(FragmentButterIDChoosePackage.this,FragmentButterIDConfirmOrder.class);
+                        Intent intent = new Intent(FragmentButterIDChoosePackageVanilla.this,FragmentButterIDConfirmOrder.class);
                         intent.putExtra("step5", R.drawable.boxkinh6);
                         startActivity(intent);
                     }
@@ -119,14 +118,14 @@ public class FragmentButterIDChoosePackage extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(FragmentButterIDChoosePackage.this,FragmentButterIDChooseCheese.class);
+                Intent intent = new Intent(FragmentButterIDChoosePackageVanilla.this,FragmentButterIDChooseCheeseVanilla.class);
                 startActivity(intent);
             }
         });
 
     }
 
-    private void linkViews() {
+    private void linkView() {
         llBag = findViewById(R.id.ll_bag1c);
         llBox1c = findViewById(R.id.ll_box1c);
         llBoxgiay6c = findViewById(R.id.ll_boxgiay6c);

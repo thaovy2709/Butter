@@ -221,7 +221,7 @@
         android:fontFamily="@font/quicksand_bold"
         android:textColor="@color/neutral_4"/>
 
-    <com.google.android.material.button.MaterialButton
+    <Button
         android:id="@+id/btn_Next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

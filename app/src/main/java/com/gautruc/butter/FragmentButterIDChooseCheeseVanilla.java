@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-public class FragmentButterIDChooseCheese extends AppCompatActivity {
+public class FragmentButterIDChooseCheeseVanilla extends AppCompatActivity {
 
     ImageView imv_Cookie;
     LinearLayout linearAddCheese, linearNoCheese;
@@ -18,7 +18,7 @@ public class FragmentButterIDChooseCheese extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fragment_butter_idchoose_cheese);
+        setContentView(R.layout.activity_fragment_butter_idchoose_cheese_vanilla);
 
 
         ImageView imvMainDip = (ImageView) findViewById(R.id.imv_Cookie);
@@ -33,24 +33,24 @@ public class FragmentButterIDChooseCheese extends AppCompatActivity {
 
         linkView();
         addEvents();
-
     }
 
     private void addEvents() {
+
         linearAddCheese.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 linearAddCheese.setBackgroundResource(R.drawable.choosenframe);
                 linearNoCheese.setBackground(null);
-                imv_Cookie.setImageResource(R.drawable.chococheese);
+                imv_Cookie.setImageResource(R.drawable.vanicheese2);
 
-                btnNext.setBackgroundColor(FragmentButterIDChooseCheese.this.getResources().getColor(R.color.secondary_4));
+                btnNext.setBackgroundColor(FragmentButterIDChooseCheeseVanilla.this.getResources().getColor(R.color.secondary_4));
 
                 btnNext.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intent = new Intent(FragmentButterIDChooseCheese.this, FragmentButterIDChoosePackage.class);
-                        intent.putExtra("step4", R.drawable.chococheese);
+                        Intent intent = new Intent(FragmentButterIDChooseCheeseVanilla.this, FragmentButterIDChoosePackageVanilla.class);
+                        intent.putExtra("step4", R.drawable.vanicheese2);
                         startActivity(intent);
                     }
                 });
@@ -62,31 +62,28 @@ public class FragmentButterIDChooseCheese extends AppCompatActivity {
             public void onClick(View view) {
                 linearNoCheese.setBackgroundResource(R.drawable.choosenframe);
                 linearAddCheese.setBackground(null);
-                imv_Cookie.setImageResource(R.drawable.dipchoco);
+                imv_Cookie.setImageResource(R.drawable.dipvani);
 
-                btnNext.setBackgroundColor(FragmentButterIDChooseCheese.this.getResources().getColor(R.color.secondary_4));
+                btnNext.setBackgroundColor(FragmentButterIDChooseCheeseVanilla.this.getResources().getColor(R.color.secondary_4));
 
                 btnNext.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intent = new Intent(FragmentButterIDChooseCheese.this, FragmentButterIDChoosePackage.class);
-                        intent.putExtra("step4", R.drawable.dipchoco);
+                        Intent intent = new Intent(FragmentButterIDChooseCheeseVanilla.this, FragmentButterIDChoosePackageVanilla.class);
+                        intent.putExtra("step4", R.drawable.dipvani);
                         startActivity(intent);
                     }
                 });
             }
         });
+
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(FragmentButterIDChooseCheese.this,FragmentButterIDChooseDip.class);
+                Intent intent = new Intent(FragmentButterIDChooseCheeseVanilla.this,FragmentButterIDChooseDip.class);
                 startActivity(intent);
             }
         });
-
-
-
-
     }
 
     private void linkView() {
@@ -96,5 +93,4 @@ public class FragmentButterIDChooseCheese extends AppCompatActivity {
         btnBack = findViewById(R.id.btn_back);
         btnNext = findViewById(R.id.btn_Next);
     }
-
 }

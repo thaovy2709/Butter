@@ -19,7 +19,7 @@ public class FragmentButterIDChooseDip extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fragment_butter_idchoose_dip);
-        getSupportActionBar().hide();
+
 
         linkViews();
         addEvents();
@@ -32,6 +32,18 @@ public class FragmentButterIDChooseDip extends AppCompatActivity {
                 llChocoDip.setBackgroundResource(R.drawable.choosenframe);
                 llVaniDip.setBackground(null);
                 imvCookie.setImageResource(R.drawable.dipchoco);
+
+                btnNext.setBackgroundColor(FragmentButterIDChooseDip.this.getResources().getColor(R.color.secondary_4));
+
+                btnNext.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(FragmentButterIDChooseDip.this, FragmentButterIDChooseCheese.class);
+                        intent.putExtra("step3", R.drawable.dipchoco);
+                        startActivity(intent);
+                    }
+                });
+
             }
         });
         llVaniDip.setOnClickListener(new View.OnClickListener() {
@@ -40,6 +52,18 @@ public class FragmentButterIDChooseDip extends AppCompatActivity {
                 llVaniDip.setBackgroundResource(R.drawable.choosenframe);
                 llChocoDip.setBackground(null);
                 imvCookie.setImageResource(R.drawable.dipvani);
+
+                btnNext.setBackgroundColor(FragmentButterIDChooseDip.this.getResources().getColor(R.color.secondary_4));
+
+                btnNext.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(FragmentButterIDChooseDip.this, FragmentButterIDChooseCheeseVanilla.class);
+                        intent.putExtra("step3", R.drawable.dipvani);
+                        startActivity(intent);
+                    }
+                });
+
             }
         });
         btnBack.setOnClickListener(new View.OnClickListener() {
@@ -49,13 +73,7 @@ public class FragmentButterIDChooseDip extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        btnNext.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(FragmentButterIDChooseDip.this,FragmentButterIDChooseCheese.class);
-                startActivity(intent);
-            }
-        });
+
     }
 
     private void linkViews() {

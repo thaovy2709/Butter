@@ -19,7 +19,6 @@ public class ActivityButterID extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_butter_id);
-        getSupportActionBar().hide();
 
         linkView();
         addEvents();
@@ -34,6 +33,14 @@ public class ActivityButterID extends AppCompatActivity {
                 llSizeLarge.setBackgroundResource(R.drawable.choosenframe);
                 llSizeMini.setBackground(null);
                 btnNext.setBackgroundColor(ActivityButterID.this.getResources().getColor(R.color.secondary_4));
+
+                btnNext.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(ActivityButterID.this,FragmentButterIDChooseCreme.class);
+                        startActivity(intent);
+                    }
+                });
             }
         });
 
@@ -43,15 +50,17 @@ public class ActivityButterID extends AppCompatActivity {
                 llSizeMini.setBackgroundResource(R.drawable.choosenframe);
                 llSizeLarge.setBackground(null);
                 btnNext.setBackgroundColor(ActivityButterID.this.getResources().getColor(R.color.secondary_4));
+
+                btnNext.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(ActivityButterID.this,FragmentButterIDChooseCreme.class);
+                        startActivity(intent);
+                    }
+                });
             }
         });
-        btnNext.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(ActivityButterID.this,FragmentButterIDChooseCreme.class);
-                startActivity(intent);
-            }
-        });
+
 
     }
 
