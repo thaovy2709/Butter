@@ -5,6 +5,7 @@
     android:paddingEnd="8dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:id="@+id/layout_homepage_blog"
     android:layout_marginEnd="8dp">
 
     <ImageView

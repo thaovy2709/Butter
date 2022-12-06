@@ -81,8 +81,7 @@ public class FragmentSearchScreen extends AppCompatActivity {
         imvBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(FragmentSearchScreen.this,HomepageActivity.class);
-                startActivity(intent);
+                finish();
             }
         });
 

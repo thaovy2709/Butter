@@ -85,7 +85,7 @@
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="630dp"
+        android:layout_height="743dp"
         android:scrollbars="none">
 
         <androidx.appcompat.widget.LinearLayoutCompat
@@ -94,6 +94,7 @@
             android:orientation="vertical">
 
             <ImageView
+                android:layout_marginTop="16dp"
                 android:layout_width="369dp"
                 android:layout_height="192dp"
                 android:layout_gravity="center"
@@ -166,6 +167,7 @@
                 android:weightSum="2">
 
                 <LinearLayout
+                    android:id="@+id/ll_exchangePoint"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -188,6 +190,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/ll_benefitPromotion"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -264,7 +267,7 @@
                 <Button
                     android:id="@+id/btn_ApDung"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="27dp"
                     android:layout_gravity="center"
                     android:layout_weight="0.5"
                     android:background="@drawable/item_homepage_butterid"

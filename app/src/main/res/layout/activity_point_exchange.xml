@@ -15,7 +15,7 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/imvBackToMyVoucher"
+            android:id="@+id/imv_exchangePoint"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="16dp"

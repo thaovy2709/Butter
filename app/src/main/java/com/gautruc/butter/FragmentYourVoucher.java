@@ -53,16 +53,16 @@ public class FragmentYourVoucher extends AppCompatActivity {
 
     private List<Voucher> getListVoucher() {
         List<Voucher> listVoucher = new ArrayList<>();
-        listVoucher.add(new Voucher(R.drawable.voucher8));
-        listVoucher.add(new Voucher(R.drawable.voucher2));
-        listVoucher.add(new Voucher(R.drawable.voucher3));
-        listVoucher.add(new Voucher(R.drawable.voucher4));
-        listVoucher.add(new Voucher(R.drawable.voucher1));
-        listVoucher.add(new Voucher(R.drawable.voucher5));
-        listVoucher.add(new Voucher(R.drawable.voucher9));
-        listVoucher.add(new Voucher(R.drawable.voucher10));
-        listVoucher.add(new Voucher(R.drawable.voucher6));
-        listVoucher.add(new Voucher(R.drawable.voucher7));
+        listVoucher.add(new Voucher(R.drawable.promotion1));
+        listVoucher.add(new Voucher(R.drawable.promotion2));
+        listVoucher.add(new Voucher(R.drawable.promotion3));
+        listVoucher.add(new Voucher(R.drawable.promotion4));
+        listVoucher.add(new Voucher(R.drawable.promotion5));
+        listVoucher.add(new Voucher(R.drawable.promotion6));
+        listVoucher.add(new Voucher(R.drawable.promotion7));
+        listVoucher.add(new Voucher(R.drawable.promotion8));
+        listVoucher.add(new Voucher(R.drawable.promotion9));
+        listVoucher.add(new Voucher(R.drawable.promotion10));
 
 
         return listVoucher;

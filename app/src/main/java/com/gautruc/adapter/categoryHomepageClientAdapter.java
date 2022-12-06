@@ -1,68 +1,67 @@
 package com.gautruc.adapter;
 
 import android.content.Context;
-import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.gautruc.butter.HomepageActivity;
 import com.gautruc.butter.R;
 import com.gautruc.model.categoryHomepage;
-import com.gautruc.model.productHomepage;
+import com.gautruc.model.categoryHomepageClient;
 
 import java.util.List;
 
-public class categoryHomepageAdapter extends RecyclerView.Adapter<categoryHomepageAdapter.categoryViewHolder> {
+public class categoryHomepageClientAdapter  extends RecyclerView.Adapter<categoryHomepageClientAdapter.categoryViewHolder> {
 
-    Context mcontext;
-    List<categoryHomepage> categoryHomepageList;
-
-    public categoryHomepageAdapter(Context mcontext) {
+    public categoryHomepageClientAdapter(Context mcontext) {
         this.mcontext = mcontext;
     }
 
-    public void setData(List<categoryHomepage> list){
-        this.categoryHomepageList = list;
+    Context mcontext;
+    List<categoryHomepageClient> categoryHomepageClientList;
+
+    public void setData(List<categoryHomepageClient> list){
+        this.categoryHomepageClientList = list;
         notifyDataSetChanged();
     }
+
     @NonNull
     @Override
-    public categoryViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public categoryHomepageClientAdapter.categoryViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_homepagecategory,parent,false);
 
-        return new  categoryViewHolder(view);
+        return new categoryHomepageClientAdapter.categoryViewHolder(view);
+
     }
 
     @Override
-    public void onBindViewHolder(@NonNull categoryViewHolder holder, int position) {
-        categoryHomepage categoryHomepage = categoryHomepageList.get(position);
-        if(categoryHomepage == null){
+    public void onBindViewHolder(@NonNull categoryHomepageClientAdapter.categoryViewHolder holder, int position) {
+        categoryHomepageClient categoryhomepageclient = categoryHomepageClientList.get(position);
+        if(categoryhomepageclient == null){
             return;
         }
 
-        holder.txt_nameCategory.setText(categoryHomepage.getNameCategory());
-        holder.imv_category.setImageResource(categoryHomepage.getPhoto());
+        holder.txt_nameCategory.setText(categoryhomepageclient.getNameCategory());
+        holder.imv_category.setImageResource(categoryhomepageclient.getPhoto());
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(mcontext, RecyclerView.HORIZONTAL, false);
         holder.rcv_product.setLayoutManager(linearLayoutManager);
 
-        productHomepageAdapter producthomepageadapter = new productHomepageAdapter();
-        producthomepageadapter.setData(categoryHomepage.getProductHomepageList());
-        holder.rcv_product.setAdapter(producthomepageadapter);
+        productHomepageClientAdapter producthomepageclientadapter = new productHomepageClientAdapter();
+        producthomepageclientadapter.setData(categoryhomepageclient.getProductHomepageClientList());
+        holder.rcv_product.setAdapter(producthomepageclientadapter);
     }
 
     @Override
     public int getItemCount() {
-        if(categoryHomepageList != null){
-            return categoryHomepageList.size();
+        if(categoryHomepageClientList != null){
+            return categoryHomepageClientList.size();
 
         }
         return 0;

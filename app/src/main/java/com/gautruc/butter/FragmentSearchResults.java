@@ -26,7 +26,7 @@ public class FragmentSearchResults extends FragmentSearchScreen{
         svSearchInResult.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), FragmentSearchScreen.class);
+                Intent intent = new Intent(FragmentSearchResults.this, FragmentSearchScreen.class);
                 startActivity(intent);
             }
         });
@@ -34,8 +34,8 @@ public class FragmentSearchResults extends FragmentSearchScreen{
         gvProduct.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                //Intent intent = new Intent(getApplicationContext(), ProductDetail.class);
-                //startActivity(intent);
+                Intent intent = new Intent(FragmentSearchResults.this, ProductDetailActivity.class);
+                startActivity(intent);
             }
         });
 

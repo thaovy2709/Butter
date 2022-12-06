@@ -1,6 +1,5 @@
 package com.gautruc.adapter;
 
-import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,62 +11,62 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.gautruc.butter.HomepageActivity;
+import com.gautruc.butter.LoginActivity;
 import com.gautruc.butter.ProductDetailActivity;
 import com.gautruc.butter.R;
 import com.gautruc.model.productHomepage;
+import com.gautruc.model.productHomepageClient;
 
 import java.util.List;
 
-public class productHomepageAdapter extends RecyclerView.Adapter<productHomepageAdapter.ViewHolder>{
+public class productHomepageClientAdapter extends RecyclerView.Adapter<productHomepageClientAdapter.ViewHolder> {
 
 
-    private List<productHomepage> productHomepageList;
+    private List<productHomepageClient> productHomepageClientList;
 
-    public void setData( List<productHomepage> list){
-        this.productHomepageList = list;
+    public void setData( List<productHomepageClient> list){
+        this.productHomepageClientList = list;
         notifyDataSetChanged();
     }
+
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public productHomepageClientAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_layout, parent, false);
 
-        return new ViewHolder(view);
+        return new productHomepageClientAdapter.ViewHolder(view);
+
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        productHomepage producthomepage = productHomepageList.get(position);
-        if(producthomepage == null){
+    public void onBindViewHolder(@NonNull productHomepageClientAdapter.ViewHolder holder, int position) {
+        productHomepageClient producthomepageclient = productHomepageClientList.get(position);
+        if(producthomepageclient == null){
             return;
         }
 
 
-        holder.imv_Product.setImageResource(producthomepage.getPhoto());
-        holder.txt_productName.setText(producthomepage.getName());
-        holder.txt_Rating.setText(producthomepage.getRating());
-        holder.txt_Stock.setText(producthomepage.getStock());
-        holder.txt_Price.setText(String.valueOf(producthomepage.getPrice()));
-        holder.txt_oldPrice.setText(String.valueOf(producthomepage.getOldPrice()));
+        holder.imv_Product.setImageResource(producthomepageclient.getPhoto());
+        holder.txt_productName.setText(producthomepageclient.getName());
+        holder.txt_Rating.setText(producthomepageclient.getRating());
+        holder.txt_Stock.setText(producthomepageclient.getStock());
+        holder.txt_Price.setText(String.valueOf(producthomepageclient.getPrice()));
+        holder.txt_oldPrice.setText(String.valueOf(producthomepageclient.getOldPrice()));
 
 
         holder.layout_productHomepage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent (v.getContext(), ProductDetailActivity.class);
+                Intent intent = new Intent (v.getContext(), LoginActivity.class);
                 v.getContext().startActivity(intent);
             }
         });
     }
 
-
-
-
     @Override
     public int getItemCount() {
-        if (productHomepageList != null){
-            return productHomepageList.size();
+        if (productHomepageClientList != null){
+            return productHomepageClientList.size();
         }
         return 0;
     }
@@ -89,5 +88,5 @@ public class productHomepageAdapter extends RecyclerView.Adapter<productHomepage
             btn_Add = itemView.findViewById(R.id.btn_Add);
             layout_productHomepage = itemView.findViewById(R.id.layout_productHomepage);
         }
-}
+    }
 }

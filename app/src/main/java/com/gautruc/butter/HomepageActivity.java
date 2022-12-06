@@ -1,7 +1,11 @@
 package com.gautruc.butter;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.View;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -17,6 +21,7 @@ import com.gautruc.model.categoryHomepage;
 import com.gautruc.model.eventHomepage;
 import com.gautruc.model.productHomepage;
 import com.gautruc.model.sliderBanner;
+import com.google.android.material.navigation.NavigationBarView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -51,10 +56,47 @@ public class HomepageActivity extends AppCompatActivity {
         binding = ActivityHomepageBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        manipulateMenu();
         loadEvent();
         loadProduct();
         addEvent();
 
+    }
+
+    private void manipulateMenu() {
+        binding.bottomNavigation.setSelectedItemId(R.id.bottom_navigation);
+
+        binding.bottomNavigation.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()){
+                    case R.id.nav_Homepage:
+                        return true;
+                    case R.id.nav_Menu:
+                        startActivity(new Intent(getApplicationContext(), MenuScreenActivity.class));
+                        finish();
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.nav_ButterId:
+                        startActivity(new Intent(getApplicationContext(), ActivityButterID.class));
+                        finish();
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.nav_Promotion:
+                        startActivity(new Intent(getApplicationContext(), PromotionScreenActivity.class));
+                        finish();
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.nav_Order:
+                        startActivity(new Intent(getApplicationContext(), OngoingScreenActivity.class));
+                        finish();
+                        overridePendingTransition(0,0);
+                        return true;
+
+                }
+                return false;
+            }
+        });
     }
 
     private void loadEvent() {
@@ -123,6 +165,59 @@ public class HomepageActivity extends AppCompatActivity {
 
         circleIndicator.setViewPager(viewPager);
         slideradapter.registerDataSetObserver(circleIndicator.getDataSetObserver());
+
+        binding.imvNotification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomepageActivity.this, NotificationList.class);
+                startActivity(intent);
+            }
+        });
+
+        binding.imvProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomepageActivity.this, ProfileScreenActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        binding.imvButteridBanner.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomepageActivity.this, ActivityButterID.class);
+                startActivity(intent);
+            }
+        });
+
+        binding.rcvProduct.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomepageActivity.this, ProductDetailActivity.class);
+                startActivity(intent);
+            }
+        });
+        binding.txtReadMore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomepageActivity.this, HomepageBlogScreen.class);
+                startActivity(intent);
+            }
+        });
+        binding.txtReadMorePromotion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomepageActivity.this, HomepageEvent.class);
+                startActivity(intent);
+            }
+        });
+        binding.searchBar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomepageActivity.this, FragmentSearchScreen.class);
+                startActivity(intent);
+            }
+        });
     }
 
     //Init banner data
@@ -135,7 +230,6 @@ public class HomepageActivity extends AppCompatActivity {
 
         return list;
     }
-
 
 
 

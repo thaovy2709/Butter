@@ -12,26 +12,27 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.gautruc.butter.FragementEventNoel;
+import com.gautruc.butter.LoginActivity;
 import com.gautruc.butter.R;
 import com.gautruc.model.eventHomepage;
+import com.gautruc.model.eventHomepageClient;
 
 import java.util.List;
 
-public class eventHomepageAdapter extends BaseAdapter {
-
+public class eventHomepageClientAdapter extends BaseAdapter {
     Activity activity;
     int event_layout;
-    List<eventHomepage> eventHomepageList;
+    List<eventHomepageClient> eventHomepageClientList;
 
-    public eventHomepageAdapter(Activity activity, int event_layout, List<eventHomepage> eventHomepageList) {
+    public eventHomepageClientAdapter(Activity activity, int event_layout, List<eventHomepageClient> eventHomepageClientList) {
         this.activity = activity;
         this.event_layout = event_layout;
-        this.eventHomepageList = eventHomepageList;
+        this.eventHomepageClientList = eventHomepageClientList;
     }
 
     @Override
     public int getCount() {
-        return eventHomepageList.size();
+        return eventHomepageClientList.size();
     }
 
     @Override
@@ -46,10 +47,10 @@ public class eventHomepageAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        eventHomepageAdapter.ViewHolder holder;
+        eventHomepageClientAdapter.ViewHolder holder;
 
         if(convertView == null){
-            holder = new eventHomepageAdapter.ViewHolder();
+            holder = new eventHomepageClientAdapter.ViewHolder();
             LayoutInflater inflater = (LayoutInflater) activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
             convertView = inflater.inflate(this.event_layout, null);
@@ -62,23 +63,22 @@ public class eventHomepageAdapter extends BaseAdapter {
         }
 
         else {
-            holder = (eventHomepageAdapter.ViewHolder) convertView.getTag();
+            holder = (eventHomepageClientAdapter.ViewHolder) convertView.getTag();
         }
 
-        eventHomepage eventhomepage = eventHomepageList.get(position);
-        holder.imv_promotion.setImageResource(eventhomepage.getPhoto());
-        holder.txt_promotion.setText(eventhomepage.getDescription());
+        eventHomepageClient eventhomepageclient = eventHomepageClientList.get(position);
+        holder.imv_promotion.setImageResource(eventhomepageclient.getPhoto());
+        holder.txt_promotion.setText(eventhomepageclient.getDescription());
 
         holder.layout_homepage_event.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), FragementEventNoel.class);
+                Intent intent = new Intent(v.getContext(), LoginActivity.class);
                 v.getContext().startActivity(intent);
             }
         });
 
         return convertView;
-
     }
 
     public static  class ViewHolder{

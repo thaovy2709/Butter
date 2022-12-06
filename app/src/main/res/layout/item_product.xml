@@ -66,11 +66,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/storage"
-                    android:textSize="8dp"
-                    android:fontFamily="@font/quicksand_regular"
                     android:layout_gravity="center"
-                    android:layout_marginStart="6dp"/>
+                    android:layout_marginStart="6dp"
+                    android:fontFamily="@font/quicksand_regular"
+                    android:text="@string/storage"
+                    android:textSize="8dp" />
             </LinearLayout>
 
             <LinearLayout

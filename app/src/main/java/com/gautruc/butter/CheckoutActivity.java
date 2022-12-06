@@ -96,7 +96,8 @@ public class CheckoutActivity extends AppCompatActivity {
         binding.btnAddProduct.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //BẤM THÊM QUAY LẠI MENU
+                Intent intent = new Intent(CheckoutActivity.this, MenuScreenWithCartActivity.class);
+                startActivity(intent);
             }
         });
 

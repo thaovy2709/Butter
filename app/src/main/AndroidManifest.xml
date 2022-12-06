@@ -18,6 +18,13 @@
         android:theme="@style/Theme.Butter"
         tools:targetApi="31">
         <activity
+            android:name=".BlogDetailActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".CancelSuccessFragment"
             android:exported="false">
             <meta-data
@@ -41,7 +48,6 @@
         <activity
             android:name=".ClientHomepageActivity"
             android:exported="true">
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -77,7 +83,6 @@
         <activity
             android:name=".HomepageActivity"
             android:exported="true">
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -94,11 +99,9 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name=".FragmentButterIDConfirmOrder"
             android:exported="true">
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -106,8 +109,6 @@
         <activity
             android:name=".FragmentButterIDChoosePackage"
             android:exported="true">
-
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -115,7 +116,6 @@
         <activity
             android:name=".FragmentButterIDChooseCheese"
             android:exported="true">
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -130,7 +130,6 @@
         <activity
             android:name=".FragmentButterIDChooseCreme"
             android:exported="true">
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -138,7 +137,6 @@
         <activity
             android:name=".ActivityButterID"
             android:exported="true">
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -146,7 +144,6 @@
         <activity
             android:name=".FragmentSearchScreen"
             android:exported="true">
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -161,12 +158,10 @@
         <activity
             android:name=".LoginActivity"
             android:exported="true">
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name=".FragmentYourVoucher"
             android:exported="false">
@@ -224,14 +219,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
-        <activity
-            android:name=".NoOrderScreen"
-            android:exported="true">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
         <activity
             android:name=".OngoingScreenActivity"
             android:exported="true">
@@ -244,8 +231,6 @@
         <activity
             android:name=".MenuScreenActivity"
             android:exported="true">
-
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -260,7 +245,6 @@
         <activity
             android:name=".ProductDetailActivity"
             android:exported="true">
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -268,7 +252,6 @@
         <activity
             android:name=".HomepageBlogScreen"
             android:exported="true">
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -276,7 +259,6 @@
         <activity
             android:name=".FavoriteDishesListScreen"
             android:exported="true">
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -284,7 +266,6 @@
         <activity
             android:name=".FragementEventHalloween"
             android:exported="true">
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -292,7 +273,6 @@
         <activity
             android:name=".FragementEventMomo"
             android:exported="true">
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -309,8 +289,10 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -318,7 +300,6 @@
         <activity
             android:name=".FragementBenefitPromotion"
             android:exported="true">
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -333,7 +314,6 @@
         <activity
             android:name=".NotificationList"
             android:exported="true">
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

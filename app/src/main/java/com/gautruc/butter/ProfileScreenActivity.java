@@ -66,5 +66,18 @@ public class ProfileScreenActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        binding.imvBackprofileHomepage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+        binding.imvDonHang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (ProfileScreenActivity.this, OngoingScreenActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

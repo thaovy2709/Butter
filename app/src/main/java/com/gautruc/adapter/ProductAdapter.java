@@ -90,13 +90,21 @@ public class ProductAdapter extends BaseAdapter {
         int resID = ((Activity)context).getResources().getIdentifier(imgName,"drawable",((Activity)context).getPackageName());
         holder.imv_productImage.setImageResource(resID);
 
-//        holder.btn_add.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(MenuScreenActivity.this, MenuScreenWithCartActivity.class);
-//                start
-//            }
-//        });
+        holder.btn_add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), MenuScreenWithCartActivity.class);
+                view.getContext().startActivity(intent);
+            }
+        });
+
+        holder.imv_productImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), ProductDetailActivity.class);
+                v.getContext().startActivity(intent);
+            }
+        });
 
         holder.imvLove.setOnClickListener(new View.OnClickListener() {
             @Override

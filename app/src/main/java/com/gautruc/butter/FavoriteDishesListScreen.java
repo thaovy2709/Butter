@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.View;
 
 import com.gautruc.adapter.FavoriteAdapter;
 import com.gautruc.adapter.NotiAdapter;
@@ -35,6 +36,16 @@ public class FavoriteDishesListScreen extends AppCompatActivity {
         binding.rcvFavorite.setLayoutManager(linearLayoutManager);
 
         addData();
+        addEvent();
+    }
+
+    private void addEvent() {
+        binding.imvFavback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 
     private void addData() {

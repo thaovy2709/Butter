@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".OngoingScreenActivity"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:orientation="vertical">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -32,54 +31,85 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/border"
+        android:layout_height="715dp"
         android:layout_marginTop="16dp"
-        android:orientation="vertical">
+        android:background="@drawable/border"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
             android:orientation="horizontal"
-            android:layout_gravity="center">
+            android:weightSum="2">
+
             <Button
                 android:id="@+id/btn_ongoing"
-                android:layout_width="170dp"
+                android:layout_width="wrap_content"
                 android:layout_height="45dp"
                 android:layout_marginTop="32dp"
-                android:text="@string/ongoing"
                 android:background="@drawable/yellowbutton"
-                android:textColor="@color/primary_5"
                 android:fontFamily="@font/quicksand_bold"
-                android:textSize="16sp"/>
+                android:text="@string/ongoing"
+                android:textColor="@color/primary_5"
+                android:layout_weight="1"
+                android:textSize="16sp" />
 
             <Button
                 android:id="@+id/btn_delivered"
-                android:layout_width="170dp"
+                android:layout_width="wrap_content"
                 android:layout_height="45dp"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="32dp"
-                android:text="@string/delivered"
+                android:layout_weight="1"
                 android:background="@drawable/graybutton"
-                android:textColor="@color/neutral_4"
                 android:fontFamily="@font/quicksand_bold"
-                android:textSize="16sp"
-                android:layout_marginStart="16dp"/>
+                android:text="@string/delivered"
+                android:textColor="@color/neutral_4"
+                android:textSize="16sp" />
 
         </LinearLayout>
 
-        <RelativeLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
 
-            <ListView
-                android:id="@+id/lv_orderHistory"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:scrollbars="none"/>
-        </RelativeLayout>
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/lv_orderHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:layout_marginTop="8dp"
+                    android:scrollbars="none" />
+            </RelativeLayout>
+
+        </ScrollView>
+
 
     </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:itemIconTint="@color/color_menu_nav"
+        app:itemTextColor="@color/color_menu_nav"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:itemTextAppearanceActive="@style/MyBottomNavigationView.TextAppearance"
+        app:itemTextAppearanceInactive="@style/MyBottomNavigationView.TextAppearance"
+        app:menu="@menu/menunavigation" />
 
 
 </LinearLayout>

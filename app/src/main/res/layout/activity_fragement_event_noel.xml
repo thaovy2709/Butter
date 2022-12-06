@@ -36,7 +36,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/head_fregnoel"
+            android:text="Freeship 10 đơn hàng - Butter nha"
             android:textSize="14sp"
 
             android:layout_marginLeft="16dp"

@@ -11,28 +11,27 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.gautruc.butter.BlogDetailActivity;
 import com.gautruc.butter.LoginActivity;
 import com.gautruc.butter.R;
 import com.gautruc.model.blogHomepage;
+import com.gautruc.model.blogHomepageClient;
 
 import java.util.List;
 
-public class blogHomepageAdapter extends BaseAdapter {
-
+public class blogHomepageClientAdapter extends BaseAdapter {
     Activity activity;
     int blog_layout;
-    List<blogHomepage> blogHomepageList;
+    List<blogHomepageClient> blogHomepageClientList;
 
-    public blogHomepageAdapter(Activity activity, int blog_layout, List<blogHomepage> blogHomepageList) {
+    public blogHomepageClientAdapter(Activity activity, int blog_layout, List<blogHomepageClient> blogHomepageClientList) {
         this.activity = activity;
         this.blog_layout = blog_layout;
-        this.blogHomepageList = blogHomepageList;
+        this.blogHomepageClientList = blogHomepageClientList;
     }
 
     @Override
     public int getCount() {
-        return blogHomepageList.size();
+        return blogHomepageClientList.size();
     }
 
     @Override
@@ -50,7 +49,7 @@ public class blogHomepageAdapter extends BaseAdapter {
 
         ViewHolder holder;
         if(convertView == null){
-            holder = new ViewHolder();
+            holder = new blogHomepageClientAdapter.ViewHolder();
 
             LayoutInflater inflater = (LayoutInflater) activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
@@ -69,16 +68,16 @@ public class blogHomepageAdapter extends BaseAdapter {
             holder = (ViewHolder) convertView.getTag();
         }
 
-        blogHomepage bloghomepage = blogHomepageList.get(position);
-        holder.imv_blog.setImageResource(bloghomepage.getPhoto());
-        holder.txt_blogTime.setText(bloghomepage.getDate());
-        holder.txt_blogName.setText(bloghomepage.getTitle());
-        holder.txt_blogDes.setText(bloghomepage.getDescription());
+        blogHomepageClient blogHomepageClient = blogHomepageClientList.get(position);
+        holder.imv_blog.setImageResource(blogHomepageClient.getPhoto());
+        holder.txt_blogTime.setText(blogHomepageClient.getDate());
+        holder.txt_blogName.setText(blogHomepageClient.getTitle());
+        holder.txt_blogDes.setText(blogHomepageClient.getDescription());
 
         holder.layout_homepage_blog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), BlogDetailActivity.class);
+                Intent intent = new Intent(v.getContext(), LoginActivity.class);
                 v.getContext().startActivity(intent);
             }
         });
@@ -91,4 +90,5 @@ public class blogHomepageAdapter extends BaseAdapter {
         TextView txt_blogTime, txt_blogName, txt_blogDes;
         LinearLayout layout_homepage_blog;
     }
+
 }

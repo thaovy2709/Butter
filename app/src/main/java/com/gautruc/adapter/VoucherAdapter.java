@@ -1,15 +1,19 @@
 package com.gautruc.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.gautruc.butter.FragmentYourVoucher;
+import com.gautruc.butter.MenuScreenActivity;
 import com.gautruc.butter.R;
 import com.gautruc.model.Offer;
 import com.gautruc.model.Voucher;
@@ -45,6 +49,15 @@ public class VoucherAdapter extends RecyclerView.Adapter<VoucherAdapter.VoucherV
         }
 
         holder.voucherThumb.setImageResource(voucher.getVoucherThumb());
+
+        holder.voucherThumb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(v.getContext(), "Bạn đã áp dụng voucher thành công", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(v.getContext(), MenuScreenActivity.class);
+                v.getContext().startActivity(intent);
+            }
+        });
     }
 
     @Override

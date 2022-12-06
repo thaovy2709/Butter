@@ -1,20 +1,23 @@
 package com.gautruc.butter;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.gautruc.adapter.ProductAdapter;
-import com.gautruc.butter.databinding.ActivityProductDetailBinding;
+import com.gautruc.butter.databinding.ActivityMenuScreenWithCartBinding;
 import com.gautruc.database.DatabaseHelper;
 import com.gautruc.model.product;
+import com.google.android.material.navigation.NavigationBarView;
 
 import java.util.ArrayList;
 
@@ -29,16 +32,60 @@ public class MenuScreenWithCartActivity extends AppCompatActivity {
     TextView loai;
     Button btnThem;
 
+    ActivityMenuScreenWithCartBinding binding;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu_screen_with_cart);
+        //setContentView(R.layout.activity_menu_screen_with_cart);
+
+        binding = ActivityMenuScreenWithCartBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
         linkView();
+        manipulateMenu();
         createData();
         loadInitial();
         addEvents();
 
+    }
+
+    private void manipulateMenu() {
+        binding.bottomNavigation.setSelectedItemId(R.id.bottom_navigation);
+        binding.bottomNavigation.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+                switch (item.getItemId()){
+                    case R.id.nav_Menu:
+                        return true;
+                    case R.id.nav_Homepage:
+                        startActivity(new Intent(getApplicationContext(), HomepageActivity.class));
+                        finish();
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.nav_ButterId:
+                        startActivity(new Intent(getApplicationContext(), ActivityButterID.class));
+                        finish();
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.nav_Promotion:
+                        startActivity(new Intent(getApplicationContext(), PromotionScreenActivity.class));
+                        finish();
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.nav_Order:
+                        startActivity(new Intent(getApplicationContext(), OngoingScreenActivity.class));
+                        finish();
+                        overridePendingTransition(0,0);
+                        return true;
+
+                }
+
+                return false;
+            }
+        });
     }
 
     private void linkView() {
@@ -249,6 +296,14 @@ public class MenuScreenWithCartActivity extends AppCompatActivity {
                 array = loadTable("Drink");
                 adapter = new ProductAdapter(MenuScreenWithCartActivity.this, R.layout.item_product, array);
                 ds.setAdapter(adapter);
+            }
+        });
+
+        btnThem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuScreenWithCartActivity.this, CheckoutActivity.class);
+                startActivity(intent);
             }
         });
     }

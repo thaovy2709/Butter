@@ -50,7 +50,7 @@ public class suggestedItemCheckoutAdapter extends RecyclerView.Adapter<suggested
         holder.btn_addSuggested.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent sang màn hình product detail
+                Toast.makeText(v.getContext(),"Bạn đã thêm sản phẩm thành công",Toast.LENGTH_SHORT).show();
             }
         });
 

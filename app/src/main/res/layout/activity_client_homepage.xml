@@ -61,7 +61,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="700dp"
+        android:layout_height="790dp"
         android:layout_marginTop="4dp">
 
         <LinearLayout
@@ -110,6 +110,7 @@
                     android:src="@drawable/hello"/>
 
                 <Button
+                    android:id="@+id/btn_login_client"
                     android:layout_width="112dp"
                     android:layout_height="40dp"
                     android:text="Đăng nhập"
@@ -181,6 +182,7 @@
                     android:layout_gravity="center"
                     android:layout_marginLeft="110dp"
                     android:fontFamily="@font/quicksand_semibold"
+                    android:clickable="true"
                     android:text="Xem thêm"
                     android:textColor="@color/primary_4"
                     android:textSize="12sp" />

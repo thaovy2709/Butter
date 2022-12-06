@@ -165,6 +165,7 @@ public class OTPVerifyFragment extends AppCompatActivity {
 
                     Intent intent = new Intent(OTPVerifyFragment.this, HomepageActivity.class);
                     startActivity(intent);
+                    finish();
                 }
             }
         });

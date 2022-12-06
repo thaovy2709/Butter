@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.view.View;
 
 import com.gautruc.adapter.NotiAdapter;
 import com.gautruc.butter.databinding.ActivityNotificationListBinding;
@@ -38,6 +39,16 @@ public class NotificationList extends AppCompatActivity {
         binding.rcvNoti.setLayoutManager(linearLayoutManager);
 
         addData();
+        addEvents();
+    }
+
+    private void addEvents() {
+        binding.imvNotibackHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 
     private void addData() {

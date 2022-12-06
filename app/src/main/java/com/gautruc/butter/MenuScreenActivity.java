@@ -1,5 +1,6 @@
 package com.gautruc.butter;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
@@ -7,6 +8,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -17,8 +19,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.gautruc.adapter.ProductAdapter;
+import com.gautruc.butter.databinding.ActivityMenuScreenBinding;
 import com.gautruc.database.DatabaseHelper;
 import com.gautruc.model.product;
+import com.google.android.material.bottomnavigation.BottomNavigationMenuView;
+import com.google.android.material.navigation.NavigationBarView;
 
 import org.w3c.dom.Text;
 
@@ -31,81 +36,61 @@ public class MenuScreenActivity extends AppCompatActivity {
     ProductAdapter adapter;
     DatabaseHelper dbHelper;
     LinearLayout llpromotion, llcookie, llcandy, llbread, llcake, lldrink;
+    ImageView imv_Search, imv_Wishlist, imv_Notification1, imv_Profile1;
     TextView catName;
     Button btnAdd;
+    ActivityMenuScreenBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_screen);
 
-
-//        getSupportActionBar().hide();
-
+        binding = ActivityMenuScreenBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
         linkView();
+        manipulateMenu();
         createData();
         loadInitial();
         addEvents();
-//        dbHelper = new DatabaseHelper(MenuSreenActivity.this,"Product.sqlite",null,1);
-//
-//        dbHelper.QuerryData("CREATE TABLE IF NOT EXISTS Promotion(Id INTEGER PRIMARY KEY AUTOINCREMENT, hinhanh BLOB, name VARCHAR(200), rate VARCHAR(200),  price INTEGER, oldprice INTEGER)");
-//        dbHelper.QuerryData("CREATE TABLE IF NOT EXISTS Cookie(Id INTEGER PRIMARY KEY AUTOINCREMENT, hinhanh BLOB, name VARCHAR(200), rate VARCHAR(200),  price INTEGER, oldprice INTEGER)");
-//
-////        dbHelper.QuerryData("INSERT INTO Promotion VALUES(null, 'dailycookie', 'Daily Cookie', '5.0', 35000, 40000)");
-////        dbHelper.QuerryData("INSERT INTO Promotion VALUES(null, 'brownsugar', 'Brown Sugar', '4.5', 10000, 12000)");
-////        dbHelper.QuerryData("INSERT INTO Promotion VALUES(null, 'cookiecoffee', 'Cookie Coffee', '4.7', 40000, 50000)");.
-//        if (dbHelper.getNumOfRows("Promotion") == 0) {
-//            dbHelper.QuerryData("INSERT INTO Promotion VALUES(null, 'dailycookie', 'Daily Cookie', '5.0', 35000, 40000)");
-//            dbHelper.QuerryData("INSERT INTO Promotion VALUES(null, 'brownsugar', 'Brown Sugar', '4.5', 10000, 12000)");
-//            dbHelper.QuerryData("INSERT INTO Promotion VALUES(null, 'cookiecoffee', 'Cookie Coffee', '4.6', 40000, 50000)");
-//        }
 
-//        dbHelper.QuerryData("INSERT INTO Cookie VALUES(null, 'browniecookie1', 'Brownie Cookie', '5.0', 50000, null)");
+    }
 
-//        Cursor dataProduct = dbHelper.GetData("SELECT * FROM Promotion");
-//        while (dataProduct.moveToNext()) {
-//            String hinhanh = dataProduct.getString(1);
-//            String name = dataProduct.getString(2);
-//            String rate = dataProduct.getString(3);
-//            int price = dataProduct.getInt(4);
-//            int oldprice = dataProduct.getInt(5);
-//
-//            int Id = dataProduct.getInt(0);
-//
-//            arr.add(new product(Id, hinhanh, name, rate, price, oldprice));
-//        }
-//        adapter.notifyDataSetChanged();
+    private void manipulateMenu() {
+            binding.bottomNavigation.setSelectedItemId(R.id.bottom_navigation);
 
-//        llpromotion.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                arr.clear();
-//                Cursor dataProduct = dbHelper.GetData("SELECT * FROM Promotion");
-//                while (dataProduct.moveToNext()) {
-//                    String hinhanh = dataProduct.getString(1);
-//                    String name = dataProduct.getString(2);
-//                    String rate = dataProduct.getString(3);
-//                    int price = dataProduct.getInt(4);
-//                    int oldprice = dataProduct.getInt(5);
-//
-//                    int Id = dataProduct.getInt(0);
-//
-//                    arr.add(new product(Id, hinhanh, name, rate, price, oldprice));
-//                }
-//                adapter.notifyDataSetChanged();
-//
-//            }
-//        });
-//
-//        llcookie.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(MenuSreenActivity.this, OngoingScreenActivity.class);
-//                startActivity(intent);
-//            }
-//        });
+            binding.bottomNavigation.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+                @Override
+                public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                    switch (item.getItemId()){
+                        case R.id.nav_Menu:
+                            return true;
+                        case R.id.nav_Homepage:
+                            startActivity(new Intent(getApplicationContext(), HomepageActivity.class));
+                            finish();
+                            overridePendingTransition(0,0);
+                            return true;
+                        case R.id.nav_ButterId:
+                            startActivity(new Intent(getApplicationContext(), ActivityButterID.class));
+                            finish();
+                            overridePendingTransition(0,0);
+                            return true;
+                        case R.id.nav_Promotion:
+                            startActivity(new Intent(getApplicationContext(), PromotionScreenActivity.class));
+                            finish();
+                            overridePendingTransition(0,0);
+                            return true;
+                        case R.id.nav_Order:
+                            startActivity(new Intent(getApplicationContext(), OngoingScreenActivity.class));
+                            finish();
+                            overridePendingTransition(0,0);
+                            return true;
 
+                    }
+                    return false;
+                }
+            });
     }
 
 
@@ -120,6 +105,10 @@ public class MenuScreenActivity extends AppCompatActivity {
         lldrink = (LinearLayout) findViewById(R.id.ll_drink);
         catName = (TextView) findViewById(R.id.txt_catName);
         btnAdd = (Button) findViewById(R.id.btn_add);
+        imv_Search = findViewById(R.id.imv_Search);
+        imv_Wishlist = findViewById(R.id.imv_Wishlist);
+        imv_Notification1 = findViewById(R.id.imv_Notification1);
+        imv_Profile1 = findViewById(R.id.imv_Profile1);
     }
 
     private void loadInitial() {
@@ -233,25 +222,42 @@ public class MenuScreenActivity extends AppCompatActivity {
 
     private void addEvents() {
 
+        imv_Profile1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuScreenActivity.this, ProfileScreenActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        imv_Notification1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuScreenActivity.this, NotificationList.class);
+                startActivity(intent);
+            }
+        });
+
+        imv_Wishlist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuScreenActivity.this, FavoriteDishesListScreen.class);
+                startActivity(intent);
+            }
+        });
+
+        imv_Search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuScreenActivity.this, FragmentSearchScreen.class);
+                startActivity(intent);
+            }
+        });
+
         llpromotion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-
-//                arr = new ArrayList<>();
-//                Cursor dataProduct = dbHelper.GetData("SELECT * FROM Promotion");
-//                while (dataProduct.moveToNext()) {
-//                    String hinhanh = dataProduct.getString(1);
-//                    String name = dataProduct.getString(2);
-//                    String rate = dataProduct.getString(3);
-//                    int price = dataProduct.getInt(4);
-//                    int oldprice = dataProduct.getInt(5);
-//
-//                    int Id = dataProduct.getInt(0);
-//
-//                    arr.add(new product(Id, hinhanh, name, rate, price, oldprice));
-//                }
-//                adapter.notifyDataSetChanged();
                 catName.setText("Khuyến mãi");
                 arr = new ArrayList<>();
                 arr = loadTable("Promotion");
@@ -319,13 +325,6 @@ public class MenuScreenActivity extends AppCompatActivity {
             }
         });
 
-//        btnAdd.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent3 = new Intent(MenuScreenActivity.this, MenuScreenWithCartActivity.class);
-//                startActivity(intent3);
-//            }
-//        });
 
         gv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

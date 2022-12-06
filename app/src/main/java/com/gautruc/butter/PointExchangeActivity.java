@@ -1,6 +1,7 @@
 package com.gautruc.butter;
 
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -26,7 +27,17 @@ public class PointExchangeActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         addViews();
+        addEvent();
 
+    }
+
+    private void addEvent() {
+        binding.imvExchangePoint.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 
 

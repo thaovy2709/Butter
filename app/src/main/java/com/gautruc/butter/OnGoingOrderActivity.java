@@ -28,7 +28,8 @@ public class OnGoingOrderActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Back về màn hình đơn hàng đang đặt
-
+                Intent intent = new Intent(OnGoingOrderActivity.this, OngoingScreenActivity.class);
+                startActivity(intent);
             }
         });
 

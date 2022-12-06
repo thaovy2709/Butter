@@ -51,5 +51,12 @@ public class HomepageEvent extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        binding.imvEventbackHomepage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomepageEvent.this, HomepageActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
