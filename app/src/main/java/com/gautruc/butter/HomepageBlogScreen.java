@@ -40,7 +40,7 @@ public class HomepageBlogScreen extends AppCompatActivity {
         list.add(new Blog(R.drawable.breadblog2, "Tất tần tật về cake flour", "Bột bánh bông lan (cake flour) là loại bột có kết cấu mềm thường được sử dụng trong làm bánh, đặc biệt là các loại bánh ngọt..."));
         list.add(new Blog(R.drawable.breadblog3, "Câu chuyện về chiếc bánh mì Baguette", "Tản bộ ở Paris vào buổi sáng, bạn sẽ thấy nhiều người bước ra từ các cửa hàng địa phương, trên tay là những chiếc bánh mì..."));
         list.add(new Blog(R.drawable.breadblog4, "Các loại bánh Mousse phổ biến", "Mousse là một loại bánh có lớp kem mát lạnh mềm mịn, tan trong miệng. Với ý nghĩa là \"bọt\" trong tiếng Pháp...\n"));
-        list.add(new Blog(R.drawable.breadblog5, "6 loại bánh ngọt phổ biến nhất", "Bánh ngọt được ưa chuộng vì nhiều lý do, trong đó quan trọng nhất là sự đa dạng của nó...\n"));
+        list.add(new Blog(R.drawable.breadblog5, "3 loại bánh ngọt phổ biến nhất", "Bánh ngọt được ưa chuộng vì nhiều lý do, trong đó quan trọng nhất là sự đa dạng của nó...\n"));
         list.add(new Blog(R.drawable.breadblog6, "Sự khác nhau Cakes và Pastry", "Brioche là một loại bánh mì phong phú và thơm ngon với vị ngọt ngào và thơm mùi bơ...\n"));
         list.add(new Blog(R.drawable.breadblog1, "Giới thiệu về thế giới bánh Brioche", "Brioche là một loại bánh mì phong phú và thơm ngon với vị ngọt ngào và thơm mùi bơ...\n"));
 
