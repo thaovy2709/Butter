@@ -74,7 +74,7 @@
                   android:id="@+id/txtPrice"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
-                  android:text="@string/price"
+                  android:text="@string/price_favor"
                   android:textSize="8sp"
                   android:fontFamily="@font/quicksand_bold"
                   android:textColor="@color/neutral_4"
@@ -96,7 +96,7 @@
                   <TextView
                       android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
-                      android:text="@string/promotion"
+                      android:text="@string/promotion_favor"
                       android:textSize="12sp"
                       android:textColor="@color/neutral_1"
                       android:layout_gravity="center"/>

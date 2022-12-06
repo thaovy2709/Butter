@@ -17,7 +17,6 @@ public class FragmentUserPolicy extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_fragment_user_policy);
-        getSupportActionBar().hide();
         binding = ActivityFragmentUserPolicyBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 

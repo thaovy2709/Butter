@@ -279,7 +279,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <com.google.android.material.button.MaterialButton
+        <Button
             android:id="@+id/btn_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -291,7 +291,7 @@
             app:icon="@drawable/back"
             app:iconGravity="textStart"/>
 
-        <com.google.android.material.button.MaterialButton
+        <Button
             android:id="@+id/btn_ConfirmOrder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

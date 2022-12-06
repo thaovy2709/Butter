@@ -21,10 +21,12 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_login);
-        getSupportActionBar().hide();
+
 
         activityLoginBinding = ActivityLoginBinding.inflate(getLayoutInflater());
         setContentView(activityLoginBinding.getRoot());
+
+
         activityLoginBinding.btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -58,13 +60,14 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-//        activityLoginBinding.txtSkip.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(LoginActivity.this, ClientHomepage.class);
-//                startActivity(intent);
-//            }
-//        });
+
+        activityLoginBinding.txtSkip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, ClientHomepageActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
@@ -84,9 +87,4 @@ public class LoginActivity extends AppCompatActivity {
         });
         dialog.show();
     }
-
-
-
-
-
 }

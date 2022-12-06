@@ -26,7 +26,6 @@ public class FragmentPersonalInformation extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_fragment_personal_information);
-        getSupportActionBar().hide();
 
         binding = ActivityFragmentPersonalInformationBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();

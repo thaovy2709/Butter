@@ -28,7 +28,6 @@ public class FragmentRedeemOffer extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_fragment_redeem_offer);
-        getSupportActionBar().hide();
         binding = ActivityFragmentRedeemOfferBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 

@@ -23,13 +23,11 @@ public class SplashscreenActivity extends AppCompatActivity {
         //setContentView(R.layout.activity_splashscreen);
         binding = ActivitySplashscreenBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
-        //getSupportActionBar().hide();
     }
 
     public Thread myThread = new Thread(){
         public void run(){
-           Intent intent = new Intent(getApplicationContext(), HomepageActivity.class);
+           Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
            startActivity(intent);
            finish();
         }

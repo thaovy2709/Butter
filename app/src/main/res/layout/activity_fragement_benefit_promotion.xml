@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/quicksand_bold"
-            android:text="@string/head_benefit"
+            android:text="@string/head_benefitscreen"
             android:textColor="@color/neutral_5"
             android:textSize="20sp"
             android:gravity="center"

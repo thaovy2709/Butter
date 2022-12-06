@@ -54,7 +54,7 @@
         android:textSize="16dp"/>
 
 
-        <com.google.android.material.button.MaterialButton
+        <Button
             android:id="@+id/btn_Croissant"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -83,7 +83,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <com.google.android.material.button.MaterialButton
+        <Button
             android:id="@+id/btn_OreoCheese"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -97,19 +97,19 @@
             android:textAllCaps="false"
             android:backgroundTint="@color/neutral_2"/>
 
-        <com.google.android.material.button.MaterialButton
+        <Button
             android:id="@+id/btn_MatchaLatte"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:cornerRadius="5dp"
-            android:layout_marginTop="8dp"
             android:layout_marginStart="16dp"
-            android:text="Matcha Latte"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/neutral_2"
             android:fontFamily="@font/quicksand_medium"
-            android:textSize="12dp"
-            android:textColor="@color/secondary_5"
+            android:text="Matcha Latte"
             android:textAllCaps="false"
-            android:backgroundTint="@color/neutral_2"/>
+            android:textColor="@color/secondary_5"
+            android:textSize="12dp"
+            app:cornerRadius="5dp" />
 
     </LinearLayout>
 

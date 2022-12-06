@@ -171,18 +171,17 @@
             android:textSize="14sp"/>
     </LinearLayout>
 
-    <com.google.android.material.button.MaterialButton
+    <Button
         android:id="@+id/btn_UpdateProfile"
-        android:layout_width="wrap_content"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:backgroundTint="@color/primary_3"
         android:layout_gravity="center"
         android:text="Cập nhật"
         android:textSize="16dp"
         android:textColor="@color/neutral_5"
         android:textAllCaps="false"
-        app:cornerRadius="10dp"
+        android:background="@drawable/item_homepage_butterid"
         android:fontFamily="@font/quicksand_bold"/>
 
 </LinearLayout>

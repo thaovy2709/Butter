@@ -388,7 +388,7 @@
     <string name="order3">Đơn hàng #I17201026722021</string>
 
     <!-- Benefit -->\
-    <string name="head_benefit">Quyền lợi của bạn</string>
+    <string name="head_benefitscreen">Quyền lợi của bạn</string>
     <string name="head2_benefit">Tài khoản của bạn</string>
     <string name="new_memeber">Thành viên mới</string>
     <string name="detail_new_memeber">Tặng kèm 1 bánh Cookie cho hóa đơn từ 100k trở lên</string>
@@ -414,8 +414,8 @@
     <string name="rating">5.0</string>
     <string name="quality">Còn 20 sản phẩm</string>
     <string name="price_sale">35.000</string>
-    <string name="price">40.000</string>
-    <string name="promotion">Khuyến mãi</string>
+    <string name="price_favor">40.000</string>
+    <string name="promotion_favor">Khuyến mãi</string>
 
     <!-- Homepage Blog -->
     <string name="head_blog1">Bánh ngọt làm giảm stress</string>

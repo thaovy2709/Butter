@@ -19,7 +19,7 @@ public class FragmentButterIDChoosePackage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fragment_butter_idchoose_package);
-        getSupportActionBar().hide();
+
         
         linkViews();
         addEvents();

@@ -1,13 +1,11 @@
 package com.gautruc.butter;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
-import android.widget.ListView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.gautruc.adapter.PointAdapter;
 import com.gautruc.butter.databinding.ActivityPointExchangeBinding;
-import com.gautruc.fragment.FragementPromotionExchangePoint;
 import com.gautruc.model.point;
 
 import java.util.ArrayList;

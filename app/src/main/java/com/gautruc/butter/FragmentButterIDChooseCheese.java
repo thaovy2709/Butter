@@ -19,7 +19,7 @@ public class FragmentButterIDChooseCheese extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fragment_butter_idchoose_cheese);
-        getSupportActionBar().hide();
+
 
         linkView();
         addEvents();

@@ -80,7 +80,7 @@
                 android:id="@+id/btn_DoiNgay"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:backgroundTint="@color/primary_3"
+                android:background="@drawable/item_homepage_butterid"
                 android:fontFamily="@font/quicksand_bold"
                 android:gravity="center"
                 android:text="Đổi ngay"

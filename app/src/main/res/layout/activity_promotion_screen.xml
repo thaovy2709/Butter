@@ -267,7 +267,7 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_weight="0.5"
-                    android:backgroundTint="@color/primary_3"
+                    android:background="@drawable/item_homepage_butterid"
                     android:text="Áp dụng"
                     android:textAllCaps="false" />
             </LinearLayout>

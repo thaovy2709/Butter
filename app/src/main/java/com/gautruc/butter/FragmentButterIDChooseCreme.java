@@ -19,7 +19,6 @@ public class FragmentButterIDChooseCreme extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fragment_butter_idchoose_creme);
-        getSupportActionBar().hide();
 
         linkViews();
         addEvents();

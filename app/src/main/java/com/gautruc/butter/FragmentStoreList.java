@@ -27,7 +27,6 @@ public class FragmentStoreList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_fragment_store_list);
-        getSupportActionBar().hide();
 
         binding = ActivityFragmentStoreListBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());

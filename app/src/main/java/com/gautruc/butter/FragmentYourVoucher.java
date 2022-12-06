@@ -26,7 +26,6 @@ public class FragmentYourVoucher extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_fragment_your_voucher);
-        getSupportActionBar().hide();
         binding = ActivityFragmentYourVoucherBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 

@@ -136,18 +136,6 @@ public class HomepageActivity extends AppCompatActivity {
         return list;
     }
 
-    //Init event
-//    voucherCheckouts = new ArrayList<>();
-//
-//        voucherCheckouts.add(new voucherCheckout(R.drawable.voucher1));
-//        voucherCheckouts.add(new voucherCheckout(R.drawable.voucher2));
-//        voucherCheckouts.add(new voucherCheckout(R.drawable.voucher3));
-//        voucherCheckouts.add(new voucherCheckout(R.drawable.voucher4));
-//
-//    adapter = new voucherCheckoutAdapter(VoucherCheckoutFragment.this, R.layout.item_voucher_checkout, voucherCheckouts);
-//
-//
-//        binding.lvVoucher.setAdapter(adapter);
 
 
 
