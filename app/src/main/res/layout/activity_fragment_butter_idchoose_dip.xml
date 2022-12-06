@@ -245,7 +245,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginLeft="130dp"
             android:text="TIẾP"
-            android:backgroundTint="@color/secondary_4"
+            android:backgroundTint="@color/neutral_3"
             app:icon="@drawable/next"
             app:iconGravity="textEnd"/>
 

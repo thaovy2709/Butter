@@ -127,7 +127,7 @@
             android:layout_marginTop="8dp"/>
 
         <ImageView
-            android:id="@+id/imv_Cookie"
+            android:id="@+id/imv_Main"
             android:layout_width="match_parent"
             android:layout_height="180dp"
             android:foregroundGravity="center"
@@ -151,15 +151,15 @@
         android:orientation="horizontal"
         android:layout_marginTop="16dp"
         android:gravity="center"
-        android:weightSum="16"
-        android:id="@+id/ll_bag1c">
+        android:weightSum="16">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/ll_bag1c">
 
             <ImageView
                 android:id="@+id/imv_Bag"
@@ -174,6 +174,8 @@
                 android:fontFamily="@font/quicksand_bold"
                 android:text="Túi giấy 1 cái"
                 android:textSize="8dp"
+                android:layout_marginTop="-4dp"
+                android:layout_marginBottom="8dp"
                 android:textAlignment="center"
                 android:textColor="@color/neutral_4"/>
 
@@ -201,6 +203,8 @@
                 android:textSize="8dp"
                 android:textAlignment="center"
                 android:layout_gravity="center"
+                android:layout_marginTop="-4dp"
+                android:layout_marginBottom="8dp"
                 android:fontFamily="@font/quicksand_bold"
                 android:textColor="@color/neutral_4"/>
 
@@ -226,6 +230,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
+                android:layout_marginTop="-4dp"
+                android:layout_marginBottom="8dp"
                 android:text="Hộp giấy 6 cái"
                 android:textSize="8dp"
                 android:layout_gravity="center"
@@ -256,6 +262,8 @@
                 android:textSize="8dp"
                 android:textAlignment="center"
                 android:layout_gravity="center"
+                android:layout_marginTop="-4dp"
+                android:layout_marginBottom="8dp"
                 android:fontFamily="@font/quicksand_bold"
                 android:textColor="@color/neutral_4"/>
 
@@ -367,7 +375,7 @@
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="80dp"
         android:layout_gravity="bottom|end"
         app:itemIconTint="@color/color_menu_nav"
         app:itemTextColor="@color/color_menu_nav"

@@ -29,6 +29,7 @@ public class ActivityButterID extends AppCompatActivity {
 
         binding = ActivityButterIdBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        setContentView(R.layout.activity_butter_id);
 
         linkView();
         manipulateMenu();
@@ -81,6 +82,14 @@ public class ActivityButterID extends AppCompatActivity {
                 llSizeLarge.setBackgroundResource(R.drawable.choosenframe);
                 llSizeMini.setBackground(null);
                 btnNext.setBackgroundColor(ActivityButterID.this.getResources().getColor(R.color.secondary_4));
+
+                btnNext.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(ActivityButterID.this,FragmentButterIDChooseCreme.class);
+                        startActivity(intent);
+                    }
+                });
             }
         });
 
@@ -90,15 +99,17 @@ public class ActivityButterID extends AppCompatActivity {
                 llSizeMini.setBackgroundResource(R.drawable.choosenframe);
                 llSizeLarge.setBackground(null);
                 btnNext.setBackgroundColor(ActivityButterID.this.getResources().getColor(R.color.secondary_4));
+
+                btnNext.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(ActivityButterID.this,FragmentButterIDChooseCreme.class);
+                        startActivity(intent);
+                    }
+                });
             }
         });
-        btnNext.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(ActivityButterID.this,FragmentButterIDChooseCreme.class);
-                startActivity(intent);
-            }
-        });
+
 
     }
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentButterIDChooseCreme"
+    tools:context=".FragmentButterIDChoosePackageVanilla"
     android:orientation="vertical">
 
     <LinearLayout
@@ -85,6 +85,7 @@
 
     </LinearLayout>
 
+
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
@@ -126,7 +127,7 @@
             android:layout_marginTop="8dp"/>
 
         <ImageView
-            android:id="@+id/imv_Cookie"
+            android:id="@+id/imv_Main"
             android:layout_width="match_parent"
             android:layout_height="180dp"
             android:foregroundGravity="center"
@@ -138,7 +139,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hãy chọn vị kem bạn yêu thích"
+        android:text="Cuối cùng là chọn hộp đựng nè"
         android:fontFamily="@font/quicksand_bold"
         android:textSize="16dp"
         android:gravity="center"
@@ -147,33 +148,63 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
         android:gravity="center"
-        android:layout_gravity="center"
         android:weightSum="16">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:gravity="center"
             android:layout_weight="1"
-            android:orientation="vertical"
-            android:id="@+id/ll_Vani"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp">
+            android:id="@+id/ll_bag1c">
 
             <ImageView
-                android:id="@+id/imv_Vani"
-                android:layout_width="55dp"
-                android:layout_height="52dp"
-                android:layout_marginTop="8dp"
-                android:src="@drawable/vanilla" />
+                android:id="@+id/imv_Bag"
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:src="@drawable/bag1" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Vani"
-                android:textSize="10dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/quicksand_bold"
+                android:text="Túi giấy 1 cái"
+                android:textSize="8dp"
                 android:layout_marginBottom="8dp"
+                android:layout_marginTop="-4dp"
+                android:textAlignment="center"
+                android:textColor="@color/neutral_4"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginStart="24dp"
+            android:id="@+id/ll_box1c">
+
+            <ImageView
+                android:id="@+id/imv_Box1"
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:src="@drawable/box1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hộp kiếng 1 cái"
+                android:textSize="8dp"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="-4dp"
                 android:fontFamily="@font/quicksand_bold"
                 android:textColor="@color/neutral_4"/>
 
@@ -182,27 +213,28 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_weight="1"
             android:orientation="vertical"
-            android:layout_marginStart="16dp"
-            android:id="@+id/ll_Matcha"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp">
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginStart="24dp"
+            android:id="@+id/ll_boxgiay6c">
 
             <ImageView
-                android:id="@+id/imv_Matcha"
-                android:layout_width="55dp"
-                android:layout_height="52dp"
-                android:layout_marginTop="8dp"
-                android:src="@drawable/matcha" />
+
+                android:id="@+id/imv_PaperBox6C"
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:src="@drawable/boxgiay6"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Matcha"
-                android:textSize="10dp"
+                android:textAlignment="center"
+                android:layout_marginTop="-4dp"
                 android:layout_marginBottom="8dp"
+                android:text="Hộp giấy 6 cái"
+                android:textSize="8dp"
+                android:layout_gravity="center"
                 android:fontFamily="@font/quicksand_bold"
                 android:textColor="@color/neutral_4"/>
 
@@ -211,80 +243,28 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_weight="1"
             android:orientation="vertical"
-            android:layout_marginStart="16dp"
-            android:id="@+id/ll_Chocolate">
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginStart="24dp"
+            android:id="@+id/ll_boxkieng6c">
 
             <ImageView
-                android:id="@+id/imv_Chocolate"
-                android:layout_width="55dp"
-                android:layout_height="52dp"
-                android:layout_marginTop="8dp"
-                android:src="@drawable/chocolate" />
+                android:id="@+id/imv_Box6c"
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:src="@drawable/boxkinh6"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Chocolate"
-                android:textSize="10dp"
+                android:text="Hộp kiếng 6 cái"
+                android:textSize="8dp"
+                android:textAlignment="center"
+                android:layout_gravity="center"
                 android:layout_marginBottom="8dp"
+                android:layout_marginTop="-4dp"
                 android:fontFamily="@font/quicksand_bold"
-                android:textColor="@color/neutral_4"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:layout_marginStart="16dp"
-            android:id="@+id/ll_Strawberry">
-
-            <ImageView
-                android:id="@+id/imv_Strawberry"
-                android:layout_width="55dp"
-                android:layout_height="52dp"
-                android:layout_marginTop="8dp"
-                android:src="@drawable/strawberry" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Strawberry"
-                android:textSize="10dp"
-                android:layout_marginBottom="8dp"
-                android:fontFamily="@font/quicksand_bold"
-                android:textColor="@color/neutral_4"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_weight="1"
-            android:layout_marginStart="16dp"
-            android:orientation="vertical"
-            android:id="@+id/ll_Sprinkles">
-
-            <ImageView
-                android:id="@+id/imv_Sprinkles"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:layout_marginTop="8dp"
-                android:src="@drawable/sprinkles"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:text="Sprinkles"
-                android:fontFamily="@font/quicksand_bold"
-                android:textSize="10dp"
                 android:textColor="@color/neutral_4"/>
 
         </LinearLayout>
@@ -292,10 +272,11 @@
     </LinearLayout>
 
 
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="BƯỚC 2: CHỌN VỊ KEM"
+        android:text="BƯỚC 5: CHỌN HỘP ĐỰNG"
         android:layout_marginTop="16dp"
         android:gravity="center"
         android:fontFamily="@font/quicksand_bold"
@@ -319,14 +300,14 @@
             app:iconGravity="textStart"/>
 
         <Button
-            android:id="@+id/btn_Next"
+            android:id="@+id/btn_ConfirmOrder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:cornerRadius="10dp"
             android:layout_marginTop="16dp"
-            android:layout_marginLeft="130dp"
-            android:text="TIẾP"
-            android:backgroundTint="@color/neutral_3"
+            android:layout_marginLeft="100dp"
+            android:text="ĐẶT HÀNG"
+            android:backgroundTint="@color/secondary_4"
             app:icon="@drawable/next"
             app:iconGravity="textEnd"/>
 
@@ -364,22 +345,22 @@
                 android:src="@drawable/chosencream" />
 
             <ImageView
-                android:id="@+id/imv_ChooseDip"
+                android:id="@+id/imv_ChoosenDip"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
-                android:src="@drawable/dip"
+                android:src="@drawable/chosendip"
                 android:layout_column="2"/>
             <ImageView
-                android:id="@+id/imv_ChooseCheese"
+                android:id="@+id/imv_ChoosenCheese"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
-                android:src="@drawable/cheese"
+                android:src="@drawable/chosencheese"
                 android:layout_column="3"/>
             <ImageView
-                android:id="@+id/imv_Packaging"
+                android:id="@+id/imv_ChoosenPackaging"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
-                android:src="@drawable/packaging"
+                android:src="@drawable/chosenpackage"
                 android:layout_column="4"/>
         </TableRow>
     </TableLayout>
