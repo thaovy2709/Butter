@@ -2,21 +2,13 @@ package com.gautruc.butter;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Html;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.gautruc.adapter.ViewPagerAdapter;
 import com.gautruc.butter.databinding.ActivityProductDetailBinding;
-import com.google.android.material.navigation.NavigationBarView;
-
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
