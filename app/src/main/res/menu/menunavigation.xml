@@ -13,7 +13,7 @@
         android:title="@string/tab_butterId"
         android:icon="@drawable/butteridxam"/>
 
-    <item android:id="@+id/nav_Account"
+    <item android:id="@+id/nav_Order"
         android:title="@string/tab_order"
         android:icon="@drawable/menunavorder"/>
 

@@ -1,16 +1,15 @@
 package com.gautruc.butter;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.WindowManager;
-import android.window.SplashScreen;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.gautruc.butter.databinding.ActivitySplashscreenBinding;
 
+@SuppressLint("CustomSplashScreen")
 public class SplashscreenActivity extends AppCompatActivity {
 
 
@@ -24,13 +23,11 @@ public class SplashscreenActivity extends AppCompatActivity {
         //setContentView(R.layout.activity_splashscreen);
         binding = ActivitySplashscreenBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
-        getSupportActionBar().hide();
     }
 
     public Thread myThread = new Thread(){
         public void run(){
-           Intent intent = new Intent(getApplicationContext(), HomepageActivity.class);
+           Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
            startActivity(intent);
            finish();
         }

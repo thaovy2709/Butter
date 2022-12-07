@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/ll_favorite"
+    android:padding="16dp">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:cardCornerRadius="10dp">
+
+          <ImageView
+              android:scaleType="centerCrop"
+              android:id="@+id/imvDish"
+              android:layout_width="90dp"
+              android:layout_height="90dp"
+              android:src="@drawable/dailycookie" />
+
+      </androidx.cardview.widget.CardView>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_marginLeft="18dp">
+          <TextView
+              android:id="@+id/txtNameDish"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/name_dishes"
+              android:textSize="14sp"
+              android:fontFamily="@font/quicksand_bold"
+              android:textColor="@color/neutral_5"/>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_marginTop="6dp">
+              <ImageView
+                  android:layout_width="12dp"
+                  android:layout_height="12dp"
+                  android:src="@drawable/star"/>
+              <TextView
+                  android:id="@+id/txtRate"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/rating"
+                  android:fontFamily="@font/quicksand_regular"
+                  android:textSize="8dp"
+                  android:layout_marginLeft="3dp"
+                  android:textColor="@color/neutral_4"/>
+              <TextView
+                  android:id="@+id/txtQuality"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/quality"
+                  android:textSize="8dp"
+                  android:layout_marginLeft="6dp"
+                  android:fontFamily="@font/quicksand_regular"
+                  android:textColor="@color/neutral_4"/>
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_marginTop="6dp">
+              <TextView
+                  android:id="@+id/txtPriceSale"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/price_sale"
+                  android:textSize="10sp"
+                  android:fontFamily="@font/quicksand_bold"
+                  android:textColor="@color/neutral_5"/>
+              <TextView
+                  android:id="@+id/txtPrice"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/price_favor"
+                  android:textSize="8sp"
+                  android:fontFamily="@font/quicksand_bold"
+                  android:textColor="@color/neutral_4"
+                  android:layout_marginLeft="5dp"/>
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_marginTop="4dp">
+
+              <androidx.cardview.widget.CardView
+                  android:layout_width="88dp"
+                  android:layout_height="25dp"
+                  app:cardCornerRadius="10dp"
+                  app:cardElevation="0dp"
+                  android:backgroundTint="@color/secondary_4">
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/promotion_favor"
+                      android:fontFamily="@font/quicksand_regular"
+                      android:textSize="12sp"
+                      android:textColor="@color/neutral_1"
+                      android:layout_gravity="center"/>
+              </androidx.cardview.widget.CardView>
+             <ImageView
+                 android:layout_width="24dp"
+                 android:layout_height="24dp"
+                 android:src="@drawable/tym"
+                 android:layout_marginStart="150dp"
+                 android:layout_gravity="end"/>
+          </LinearLayout>
+
+      </LinearLayout>
+  </LinearLayout>
+      
+
+
+</LinearLayout>

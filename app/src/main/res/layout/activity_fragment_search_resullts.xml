@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:id="@+id/ll_search"
+    tools:context=".FragmentSearchResults">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:id="@+id/imv_Image"
+                android:layout_width="115dp"
+                android:layout_height="70dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cookieoatmealhorizontal" />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_SearchName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:text="Cookie Oatmeal"
+                android:fontFamily="@font/quicksand_bold"
+                android:textSize="16dp"
+                android:textColor="@color/neutral_5"/>
+
+            <TextView
+                android:id="@+id/txt_Ingredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:text="Yến mạch, bột mì"
+                android:fontFamily="@font/quicksand_regular"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/txt_Price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:text="50.000/ 100gr"
+                android:fontFamily="@font/quicksand_regular"
+                android:textColor="@color/secondary_5"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

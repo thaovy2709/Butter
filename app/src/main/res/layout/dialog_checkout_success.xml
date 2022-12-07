@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="328dp"
+    android:layout_height="420dp"
+    android:background="@drawable/item_checkout_success">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đặt hàng thành công!"
+        android:layout_gravity="center"
+        android:fontFamily="@font/quicksand_bold"
+        android:textSize="20sp"
+        android:textColor="@color/neutral_5"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/checkout_success"
+        android:gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:textSize="14sp"
+        android:textColor="@color/neutral_4"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_trackOrder"
+        android:layout_margin="16dp"
+        android:text="Theo dõi đơn hàng"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:fontFamily="@font/quicksand_bold"
+        android:background="@drawable/item_buttonorder_checkout"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_continue"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Tiếp tục mua hàng"
+        android:textColor="@color/primary_5"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:fontFamily="@font/quicksand_bold"
+        android:background="@drawable/item_buttoncheckout"/>
+    
+    <ImageView
+        android:layout_width="132dp"
+        android:layout_height="132dp"
+        android:src="@drawable/hello"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChooseAddressCheckout">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="12dp"
+        android:paddingLeft="12dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imv_backCheckout"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back" />
+
+        <TextView
+            android:id="@+id/txt_addressTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="CHỌN ĐỊA ĐIỂM"
+            android:textColor="@color/neutral_5"
+            android:textSize="20sp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_yourDetailed"
+        android:text="Địa chỉ nhận hàng"
+        android:textColor="@color/primary_5"
+        android:fontFamily="@font/quicksand_bold"
+        android:textSize="14sp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_medium"
+            android:text="Tỉnh/Thành Phố"
+            android:textColor="@color/neutral_5"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/spinnerCity"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.7"
+            android:fontFamily="@font/quicksand_medium"
+            android:paddingStart="10dp"
+            android:spinnerMode="dropdown"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:layout_marginStart="16dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_medium"
+            android:text="Quận/Huyện"
+            android:textColor="@color/neutral_5"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/spinnerDistrict"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.7"
+            android:fontFamily="@font/quicksand_medium"
+            android:paddingStart="10dp"
+            android:spinnerMode="dropdown"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:layout_marginStart="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_medium"
+            android:text="Phường/Xã"
+            android:textColor="@color/neutral_5"
+            android:textSize="14sp" />
+
+        <Spinner
+            android:id="@+id/spinnerWard"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.7"
+            android:fontFamily="@font/quicksand_medium"
+            android:hint="Phường 1"
+            android:paddingStart="10dp"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="Địa chỉ nhà"
+        android:textColor="@color/neutral_5"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="14sp" />
+
+<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="16dp">
+
+        <EditText
+            android:id="@+id/edt_address"
+            android:layout_width="250dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:background="@drawable/item_buttoncheckout"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:fontFamily="@font/quicksand_regular"
+            android:textSize="12sp"
+            android:hint="Địa chỉ của bạn"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/btn_saveAddress"
+            android:text="Lưu địa chỉ"
+            android:textColor="@color/neutral_1"
+            android:textSize="12sp"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/item_buttonorder_checkout"/>
+
+    </LinearLayout>
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/txt_yourAddress"-->
+<!--        android:text="Địa điểm của tôi"-->
+<!--        android:textColor="@color/primary_5"-->
+<!--        android:fontFamily="@font/quicksand_bold"-->
+<!--        android:textSize="14sp"-->
+<!--        android:layout_gravity="center_vertical"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginStart="16dp"/>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="16dp">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="25dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:src="@drawable/checkoutplace"-->
+<!--            android:layout_gravity="center"/>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_marginStart="16dp">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Vị trí hiện tại của bạn"-->
+<!--                android:fontFamily="@font/quicksand_bold"-->
+<!--                android:textSize="14sp"-->
+<!--                android:textColor="@color/neutral_5"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/addressNow"-->
+<!--                android:fontFamily="@font/quicksand_regular"-->
+<!--                android:textSize="12sp"-->
+<!--                android:layout_marginTop="4dp"-->
+<!--                android:textColor="@color/neutral_5"/>-->
+
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="8dp">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="25dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:src="@drawable/checkouthome"-->
+<!--            android:layout_gravity="center"/>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_marginStart="16dp">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Nhà"-->
+<!--                android:fontFamily="@font/quicksand_bold"-->
+<!--                android:textSize="14sp"-->
+<!--                android:textColor="@color/neutral_5"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/addressHome"-->
+<!--                android:fontFamily="@font/quicksand_regular"-->
+<!--                android:textSize="12sp"-->
+<!--                android:layout_marginTop="4dp"-->
+<!--                android:textColor="@color/neutral_5"/>-->
+
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="8dp">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="25dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:src="@drawable/checkoutcompany"-->
+<!--            android:layout_gravity="center"/>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_marginStart="16dp">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Công ty"-->
+<!--                android:fontFamily="@font/quicksand_bold"-->
+<!--                android:textSize="14sp"-->
+<!--                android:textColor="@color/neutral_5"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/addressFirm"-->
+<!--                android:fontFamily="@font/quicksand_regular"-->
+<!--                android:textSize="12sp"-->
+<!--                android:layout_marginTop="4dp"-->
+<!--                android:textColor="@color/neutral_5"/>-->
+
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/txt_recentAddress"-->
+<!--        android:text="Địa điểm gần đây"-->
+<!--        android:textColor="@color/primary_5"-->
+<!--        android:fontFamily="@font/quicksand_bold"-->
+<!--        android:textSize="14sp"-->
+<!--        android:layout_gravity="center_vertical"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginStart="16dp"/>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="8dp">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="25dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:src="@drawable/checkouttime"-->
+<!--            android:layout_gravity="center"/>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_marginStart="16dp">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Flora Novia Phạm Văn Đồng"-->
+<!--                android:fontFamily="@font/quicksand_bold"-->
+<!--                android:textSize="14sp"-->
+<!--                android:textColor="@color/neutral_5"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="1452 Phạm Văn Đồng, TP.Thủ Đức"-->
+<!--                android:fontFamily="@font/quicksand_regular"-->
+<!--                android:textSize="12sp"-->
+<!--                android:layout_marginTop="4dp"-->
+<!--                android:textColor="@color/neutral_5"/>-->
+
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+
+</LinearLayout>

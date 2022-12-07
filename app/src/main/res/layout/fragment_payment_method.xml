@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PaymentMethodFragment"
+    android:background="@color/primary_1">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="12dp"
+        android:paddingLeft="12dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imv_paymentbackcheckout"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back" />
+
+        <TextView
+            android:id="@+id/txtVoucherDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Phương thức thanh toán"
+            android:textColor="@color/neutral_5"
+            android:textSize="18sp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/moreOption"
+        android:gravity="center"
+        android:paddingStart="38dp"
+        android:paddingEnd="38dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:textSize="12sp"
+        android:textColor="@color/neutral_5"
+        android:background="@color/primary_3"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phương thức thanh toán"
+        android:textColor="@color/primary_5"
+        android:fontFamily="@font/quicksand_bold"
+        android:textSize="14sp"
+        android:layout_margin="16dp"
+        android:layout_gravity="center_vertical"/>
+
+    <RadioGroup
+        android:id="@+id/radgroup_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+            <RadioButton
+                android:id="@+id/rad_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_bold"
+                android:textSize="14sp"
+                android:textColor="@color/neutral_5"
+                android:text="Tiền mặt"
+                android:layout_weight="2"/>
+
+            <RadioButton
+                android:id="@+id/rad_Momo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_bold"
+                android:textSize="14sp"
+                android:textColor="@color/neutral_5"
+                android:text="Momo"
+                android:layout_weight="2"/>
+
+            <RadioButton
+                android:id="@+id/rad_zalopay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_bold"
+                android:textSize="14sp"
+                android:textColor="@color/neutral_5"
+                android:text="ZaloPay"
+                android:layout_weight="2"/>
+
+            <RadioButton
+                android:id="@+id/rad_shopeepay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_bold"
+                android:textSize="14sp"
+                android:textColor="@color/neutral_5"
+                android:text="ShopeePay"
+                android:layout_weight="2"/>
+
+    </RadioGroup>
+
+</LinearLayout>

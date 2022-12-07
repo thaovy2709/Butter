@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CancelSuccessFragment">
+
+    <TextView
+        android:id="@+id/txtVoucherDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="YÊU CẦU HỦY ĐƠN HÀNG"
+        android:textColor="@color/neutral_5"
+        android:textSize="20sp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/item_cancel_success"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đã gửi yêu cầu"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/neutral_5"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chúng tôi đang xử lý yêu cầu của bạn"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:textSize="12sp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/neutral_5"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/cancelordertime"
+                android:layout_gravity="end"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/item_cancel_success_">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bị hủy bởi"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:textSize="12sp"
+                    android:textColor="@color/neutral_4"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="khách hàng"
+                    android:gravity="end"
+                    android:textColor="@color/neutral_5"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:textSize="12sp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="16dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lý do"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:textSize="12sp"
+                    android:textColor="@color/neutral_4"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="thay đổi địa chỉ giao hàng"
+                    android:gravity="end"
+                    android:textColor="@color/neutral_5"
+                    android:fontFamily="@font/quicksand_medium"
+                    android:textSize="12sp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:padding="14dp"
+        android:background="@drawable/item_ongoingtracking">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hủy đơn"
+            android:fontFamily="@font/quicksand_bold"
+            android:textSize="20sp"
+            android:textColor="@color/neutral_5"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/orderId"
+            android:fontFamily="@font/quicksand_medium"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/neutral_5"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/orderCustomer"
+            android:fontFamily="@font/quicksand_medium"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/neutral_5"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/orderAddress"
+            android:fontFamily="@font/quicksand_medium"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/neutral_5"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hóa đơn: 100.000đ"
+            android:fontFamily="@font/quicksand_bold"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/primary_3"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_completeCancel"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_buttonorder_checkout"
+        android:text="Hoàn thành"
+        android:textColor="@color/neutral_5"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:fontFamily="@font/quicksand_bold"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

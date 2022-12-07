@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    android:layout_gravity="center"
+    android:padding="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp">
+        
+        <ImageView
+            android:id="@+id/imv_productImage"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/dailycookie"/>
+        
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp">
+
+            <TextView
+                android:id="@+id/txt_productName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dailycookie"
+                android:textSize="14dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:layout_marginBottom="4dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rating"/>
+
+                <TextView
+                    android:id="@+id/txt_productRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rate_dailycookie"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="2dp"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/quicksand_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="6dp"
+                    android:fontFamily="@font/quicksand_regular"
+                    android:text="@string/storage"
+                    android:textSize="8dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:id="@+id/txt_productPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_dailycookie"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/quicksand_bold"/>
+
+                <TextView
+                    android:id="@+id/txt_productOldPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/oldprice_dailycookie"
+                    android:textSize="8dp"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/quicksand_medium"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/txt_promotion"
+                    android:layout_width="84dp"
+                    android:layout_height="23dp"
+                    android:src="@drawable/promotag"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="end">
+
+            <ImageView
+                android:id="@+id/imvLove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/addlove"
+                android:layout_marginBottom="24dp"/>
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="81dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/redborder"
+                android:text="@string/add"
+                android:textColor="@color/secondary_5"
+                android:textSize="12dp"
+                android:fontFamily="@font/quicksand_bold"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

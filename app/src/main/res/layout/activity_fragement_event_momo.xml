@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragementEventMomo"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="1500dp"
+                    android:layout_height="220dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/vimomokhaomoingaybannerngang" />
+
+                <ImageView
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/back"
+                    android:id="@+id/imv_backMomo"
+                    android:layout_alignParentLeft="true"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/head_fregmomo"
+                    android:textSize="14sp"
+
+                    android:layout_marginLeft="16dp"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:textColor="@color/neutral_5"/>
+
+                <TextView
+                    android:id="@+id/txtButter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/brand_name"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="16dp"
+                    android:fontFamily="@font/quicksand_regular"
+                    android:textColor="@color/neutral_5"/>
+
+                <ImageView
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtButter"
+                    android:layout_margin="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:src="@drawable/dotline" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:text="@string/time"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:text="@string/time_halloween"
+                    android:textAlignment="textEnd"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="#AEE3E4E5"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="16dp"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/shield"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/condition"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:textColor="@color/neutral_5"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:text="@string/ship_condition"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/quicksand_regular"
+                        android:textColor="@color/neutral_5"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="400dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="#E3E4E5"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="16dp"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/information"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:textColor="@color/neutral_5"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/detail_guide"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/quicksand_regular"
+                        android:textColor="@color/neutral_5"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="400dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="#E3E4E5"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="16dp"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/idea"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/voucher"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:textColor="@color/neutral_5"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/detail_voucher_momo"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/quicksand_regular"
+                        android:textColor="@color/neutral_5"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="#E3E4E5"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/btnUseVoucher"
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:text="Dùng voucher"
+                android:background="@drawable/item_apply_event"
+                android:textColor="@color/neutral_5"
+                android:textSize="12sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="8dp"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
