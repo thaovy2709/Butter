@@ -1,17 +1,16 @@
 package com.gautruc.butter;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.gautruc.adapter.OfferAdapter;
 import com.gautruc.adapter.VoucherAdapter;
@@ -70,7 +69,7 @@ public class PromotionScreenActivity extends AppCompatActivity {
     }
 
     private void manipulateMenu() {
-        binding.bottomNavigation.setSelectedItemId(R.id.bottom_navigation);
+        binding.bottomNavigation.setSelectedItemId(R.id.nav_Promotion);
         binding.bottomNavigation.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {

@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.gautruc.butter.HomepageActivity;
+import com.gautruc.butter.MenuScreenWithCartActivity;
 import com.gautruc.butter.ProductDetailActivity;
 import com.gautruc.butter.R;
 import com.gautruc.model.productHomepage;
@@ -56,6 +57,14 @@ public class productHomepageAdapter extends RecyclerView.Adapter<productHomepage
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent (v.getContext(), ProductDetailActivity.class);
+                v.getContext().startActivity(intent);
+            }
+        });
+
+        holder.btn_Add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (v.getContext(), MenuScreenWithCartActivity.class);
                 v.getContext().startActivity(intent);
             }
         });

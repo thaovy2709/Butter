@@ -24,7 +24,7 @@ public class FragmentButterIDChooseCheese extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_fragment_butter_idchoose_cheese);
+        setContentView(R.layout.activity_fragment_butter_idchoose_cheese);
 
         binding = ActivityFragmentButterIdchooseCheeseBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
@@ -46,7 +46,7 @@ public class FragmentButterIDChooseCheese extends AppCompatActivity {
     }
 
     private void manipulateMenu() {
-        binding.bottomNavigation.setSelectedItemId(R.id.bottom_navigation);
+        binding.bottomNavigation.setSelectedItemId(R.id.nav_ButterId);
         binding.bottomNavigation.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -89,7 +89,7 @@ public class FragmentButterIDChooseCheese extends AppCompatActivity {
                 linearNoCheese.setBackground(null);
                 imv_Cookie.setImageResource(R.drawable.chococheese);
 
-                btnNext.setBackgroundColor(FragmentButterIDChooseCheese.this.getResources().getColor(R.color.secondary_4));
+                btnNext.setBackgroundResource(R.drawable.item_checkouttag);
 
                 btnNext.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -109,7 +109,7 @@ public class FragmentButterIDChooseCheese extends AppCompatActivity {
                 linearAddCheese.setBackground(null);
                 imv_Cookie.setImageResource(R.drawable.dipchoco);
 
-                btnNext.setBackgroundColor(FragmentButterIDChooseCheese.this.getResources().getColor(R.color.secondary_4));
+                btnNext.setBackgroundResource(R.drawable.item_checkouttag);
 
                 btnNext.setOnClickListener(new View.OnClickListener() {
                     @Override

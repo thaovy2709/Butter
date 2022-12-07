@@ -36,7 +36,7 @@ public class FragmentButterIDChooseCreme extends AppCompatActivity {
     }
 
     private void manipulateMenu() {
-        binding.bottomNavigation.setSelectedItemId(R.id.bottom_navigation);
+        binding.bottomNavigation.setSelectedItemId(R.id.nav_ButterId);
         binding.bottomNavigation.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -83,7 +83,7 @@ public class FragmentButterIDChooseCreme extends AppCompatActivity {
                 llStrawberry.setBackground(null);
                 imvCookie.setImageResource(R.drawable.chocolate);
 
-                btnNext.setBackgroundColor(FragmentButterIDChooseCreme.this.getResources().getColor(R.color.secondary_4));
+                btnNext.setBackgroundResource(R.drawable.item_checkouttag);
 
                 btnNext.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -105,7 +105,7 @@ public class FragmentButterIDChooseCreme extends AppCompatActivity {
                 llChocolate.setBackground(null);
                 imvCookie.setImageResource(R.drawable.vanilla);
 
-                btnNext.setBackgroundColor(FragmentButterIDChooseCreme.this.getResources().getColor(R.color.secondary_4));
+                btnNext.setBackgroundResource(R.drawable.item_checkouttag);
 
                 btnNext.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -126,7 +126,7 @@ public class FragmentButterIDChooseCreme extends AppCompatActivity {
                 llChocolate.setBackground(null);
                 imvCookie.setImageResource(R.drawable.matcha);
 
-                btnNext.setBackgroundColor(FragmentButterIDChooseCreme.this.getResources().getColor(R.color.secondary_4));
+                btnNext.setBackgroundResource(R.drawable.item_checkouttag);
 
                 btnNext.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -147,7 +147,7 @@ public class FragmentButterIDChooseCreme extends AppCompatActivity {
                 llChocolate.setBackground(null);
                 imvCookie.setImageResource(R.drawable.strawberry);
 
-                btnNext.setBackgroundColor(FragmentButterIDChooseCreme.this.getResources().getColor(R.color.secondary_4));
+                btnNext.setBackgroundResource(R.drawable.item_checkouttag);
 
                 btnNext.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -168,7 +168,7 @@ public class FragmentButterIDChooseCreme extends AppCompatActivity {
                 llChocolate.setBackground(null);
                 imvCookie.setImageResource(R.drawable.sprinkles);
 
-                btnNext.setBackgroundColor(FragmentButterIDChooseCreme.this.getResources().getColor(R.color.secondary_4));
+                btnNext.setBackgroundResource(R.drawable.item_checkouttag);
 
                 btnNext.setOnClickListener(new View.OnClickListener() {
                     @Override

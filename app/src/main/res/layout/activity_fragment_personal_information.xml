@@ -57,7 +57,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="35dp"
+        android:layout_height="40dp"
         android:layout_gravity="center"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="4dp"
@@ -70,7 +70,8 @@
             android:hint="Nhập tên của bạn"
             android:padding="8dp"
             android:textColor="@color/neutral_4"
-            android:textSize="14sp"/>
+            android:textSize="14sp"
+            android:fontFamily="@font/quicksand_regular"/>
     </LinearLayout>
 
     <TextView
@@ -84,7 +85,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="35dp"
+        android:layout_height="40dp"
         android:layout_gravity="center"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="4dp"
@@ -97,7 +98,8 @@
             android:hint="Nhập số điện thoại của bạn"
             android:padding="8dp"
             android:textColor="@color/neutral_4"
-            android:textSize="14sp"/>
+            android:textSize="14sp"
+            android:fontFamily="@font/quicksand_regular"/>
     </LinearLayout>
 
     <TextView
@@ -122,7 +124,8 @@
             android:layout_height="wrap_content"
             android:text="Nam"
             android:textSize="14sp"
-            android:buttonTint="@color/neutral_5"/>
+            android:buttonTint="@color/neutral_5"
+            android:fontFamily="@font/quicksand_bold"/>
 
         <RadioButton
             android:id="@+id/GioiTinhNu"
@@ -131,7 +134,8 @@
             android:layout_marginLeft="16dp"
             android:text="Nữ"
             android:textSize="14sp"
-            android:buttonTint="@color/neutral_5"/>
+            android:buttonTint="@color/neutral_5"
+            android:fontFamily="@font/quicksand_bold"/>
     </RadioGroup>
 
     <TextView
@@ -145,7 +149,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="35dp"
+        android:layout_height="40dp"
         android:layout_gravity="center"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="4dp"
@@ -168,7 +172,8 @@
             android:layout_marginLeft="4dp"
             android:hint="Chọn ngày sinh của bạn"
             android:textColor="@color/neutral_4"
-            android:textSize="14sp"/>
+            android:textSize="14sp"
+            android:fontFamily="@font/quicksand_regular"/>
     </LinearLayout>
 
     <Button

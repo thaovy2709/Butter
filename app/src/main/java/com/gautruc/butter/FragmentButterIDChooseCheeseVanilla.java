@@ -25,7 +25,7 @@ public class FragmentButterIDChooseCheeseVanilla extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_fragment_butter_idchoose_cheese_vanilla);
+        setContentView(R.layout.activity_fragment_butter_idchoose_cheese_vanilla);
 
         binding = ActivityFragmentButterIdchooseCheeseVanillaBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
@@ -35,8 +35,8 @@ public class FragmentButterIDChooseCheeseVanilla extends AppCompatActivity {
         Bundle bundle = getIntent().getExtras();
         if (bundle != null)
         {
-            int step3 = bundle.getInt("step3");
-            imvMainDip.setImageResource(step3);
+            int step3b = bundle.getInt("step3b");
+            imvMainDip.setImageResource(step3b);
 
         }
 
@@ -45,7 +45,7 @@ public class FragmentButterIDChooseCheeseVanilla extends AppCompatActivity {
         addEvents();
     }
     private void manipulateMenu() {
-        binding.bottomNavigation.setSelectedItemId(R.id.bottom_navigation);
+        binding.bottomNavigation.setSelectedItemId(R.id.nav_ButterId);
         binding.bottomNavigation.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -90,7 +90,7 @@ public class FragmentButterIDChooseCheeseVanilla extends AppCompatActivity {
                 linearNoCheese.setBackground(null);
                 imv_Cookie.setImageResource(R.drawable.vanicheese2);
 
-                btnNext.setBackgroundColor(FragmentButterIDChooseCheeseVanilla.this.getResources().getColor(R.color.secondary_4));
+                btnNext.setBackgroundResource(R.drawable.item_checkouttag);
 
                 btnNext.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -110,7 +110,7 @@ public class FragmentButterIDChooseCheeseVanilla extends AppCompatActivity {
                 linearAddCheese.setBackground(null);
                 imv_Cookie.setImageResource(R.drawable.dipvani);
 
-                btnNext.setBackgroundColor(FragmentButterIDChooseCheeseVanilla.this.getResources().getColor(R.color.secondary_4));
+                btnNext.setBackgroundResource(R.drawable.item_checkouttag);
 
                 btnNext.setOnClickListener(new View.OnClickListener() {
                     @Override

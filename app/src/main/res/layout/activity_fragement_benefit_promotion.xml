@@ -57,6 +57,7 @@
             android:text="@string/head2_benefit"
             android:textSize="20sp"
             android:padding="8dp"
+            android:fontFamily="@font/quicksand_bold"
             android:gravity="center"
             android:textStyle="bold"
             android:layout_gravity="center"
@@ -107,6 +108,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="12sp"
+                        android:fontFamily="@font/quicksand_regular"
                         android:layout_marginLeft="4dp"
                         android:text="@string/detail_new_memeber" />
                 </LinearLayout>
@@ -148,6 +150,7 @@
                             android:layout_height="15dp"
                             android:src="@drawable/tickvang"/>
                         <TextView
+                            android:fontFamily="@font/quicksand_regular"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textSize="12sp"
@@ -169,6 +172,7 @@
                             android:layout_height="wrap_content"
                             android:textSize="12sp"
                             android:layout_marginLeft="4dp"
+                            android:fontFamily="@font/quicksand_regular"
                             android:text="@string/detail_bronze_member2" />
                     </LinearLayout>
                 </LinearLayout>
@@ -213,6 +217,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="12sp"
                         android:layout_marginLeft="4dp"
+                        android:fontFamily="@font/quicksand_regular"
                         android:text="@string/detail_bronze_member1" />
                 </LinearLayout>
 
@@ -230,6 +235,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="12sp"
                         android:layout_marginLeft="4dp"
+                        android:fontFamily="@font/quicksand_regular"
                         android:text="@string/detail_bronze_member2" />
                 </LinearLayout>
             </LinearLayout>
@@ -333,7 +339,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:fontFamily="@font/quicksand_bold"
-                    android:text="@string/silver_memeber"
+                    android:text="@string/diamond_memeber"
                     android:textColor="@color/neutral_5"
                     android:textSize="14sp" />
                 <LinearLayout
@@ -350,6 +356,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="12sp"
                         android:layout_marginLeft="4dp"
+                        android:fontFamily="@font/quicksand_regular"
                         android:text="@string/detail_bronze_member1" />
                 </LinearLayout>
                 <LinearLayout
@@ -365,6 +372,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="12sp"
+                        android:fontFamily="@font/quicksand_regular"
                         android:layout_marginLeft="4dp"
                         android:text="@string/detail_gold_member2" />
                 </LinearLayout>
@@ -382,6 +390,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="12sp"
                         android:layout_marginLeft="4dp"
+                        android:fontFamily="@font/quicksand_regular"
                         android:text="@string/detail_silver_member3" />
                 </LinearLayout>
                 <LinearLayout
@@ -398,6 +407,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="12sp"
                         android:layout_marginLeft="4dp"
+                        android:fontFamily="@font/quicksand_regular"
                         android:text="@string/detail_diamond_member4" />
                 </LinearLayout>
                 <LinearLayout
@@ -414,6 +424,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="12sp"
                         android:layout_marginLeft="4dp"
+                        android:fontFamily="@font/quicksand_regular"
                         android:text="@string/detail_diamond_member5" />
                 </LinearLayout>
             </LinearLayout>

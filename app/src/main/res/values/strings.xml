@@ -302,15 +302,15 @@
     <string name="more">Xem thêm</string>
 
     <string name="head_noel">Quà Noel từ Butter</string>
-    <string name="noel_detail">Nhập: ButterNha\nThời gian: 10/12 - 28/12\n Nội dung: miễn phí phí vận chuyển.....
+    <string name="noel_detail">Nhập: ButterNha\nThời gian: 10/12 - 28/12\nNội dung: miễn phí phí vận chuyển.....
     </string>
 
     <string name="head_takeaway">Ghé mang đi giảm 15%</string>
-    <string name="takeaway_detail"> Nhập: TAKEAWAY\nThời gian: 1/12 - 31/12\n Áp dụng cho các đơn hàng mang....
+    <string name="takeaway_detail">Nhập: TAKEAWAY\nThời gian: 1/12 - 31/12\nÁp dụng cho các đơn hàng mang....
     </string>
 
     <string name="head_halloween">Ghé mang đi giảm 15%</string>
-    <string name="halloween_detail"> Nhập: HALLOWEEN\nThời gian: 28/10 - 31/10\n Nội dung: khuyến mãi 10% trên tổng....
+    <string name="halloween_detail">Nhập: HALLOWEEN\nThời gian: 28/10 - 31/10\nNội dung: khuyến mãi 10% trên tổng....
     </string>
     <string name="title_activity_fragement_event_noel">FragementEventNoel</string>
     <string name="title_home">Home</string>
@@ -377,7 +377,7 @@
     <string name="detail_noti7">Lần đầu đến với Butter, Butter mong bạn có thật nhiều niềm vui nhé! Hãy trải nghiệm Butter ngay hôm nay.</string>
 
     <!-- Point Exchange Fragement -->
-    <string name="head_exchangepoint">Lịch sử đổi điểm</string>
+    <string name="head_exchangepoint">LỊCH SỬ ĐỔI ĐIỂM</string>
     <string name="head_h2exchangepoint">Lịch sử Butter</string>
     <string name="time_ord1">16:50 - 25/10/2022</string>
     <string name="order1">Đơn hàng #I17201026722021</string>
@@ -388,7 +388,7 @@
     <string name="order3">Đơn hàng #I17201026722021</string>
 
     <!-- Benefit -->\
-    <string name="head_benefitscreen">Quyền lợi của bạn</string>
+    <string name="head_benefitscreen">QUYỀN LỢI CỦA BẠN</string>
     <string name="head2_benefit">Tài khoản của bạn</string>
     <string name="new_memeber">Thành viên mới</string>
     <string name="detail_new_memeber">Tặng kèm 1 bánh Cookie cho hóa đơn từ 100k trở lên</string>

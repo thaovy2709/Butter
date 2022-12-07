@@ -59,10 +59,10 @@ public class FragmentRedeemOffer extends AppCompatActivity {
         listOffer.add(new Offer(R.drawable.brownsugarpop2, "Miễn phí 1 Brown Sugar Pop bất kỳ", 159));
         listOffer.add(new Offer(R.drawable.icedcofee2, "Miễn phí 1 Iced Coffee", 449));
         listOffer.add(new Offer(R.drawable.chocolatepretzelpastry1, "Miễn phí 1 Chocolate Pretzel Pastry", 699));
-        listOffer.add(new Offer(R.drawable.brownsugarpop2, "Miễn phí 1 Raisin Bread", 499));
-        listOffer.add(new Offer(R.drawable.icedcofee2, "Miễn phí 1 Oreo Cheese", 599));
-        listOffer.add(new Offer(R.drawable.chocolatepretzelpastry1, "Miễn phí 1 Cold Brew Latte", 549));
-        listOffer.add(new Offer(R.drawable.chocolatepretzelpastry1, "Miễn phí 100gr Daily Cookie", 499));
+        listOffer.add(new Offer(R.drawable.raisinbread1, "Miễn phí 1 Raisin Bread", 499));
+        listOffer.add(new Offer(R.drawable.oreocheese3, "Miễn phí 1 Oreo Cheese", 599));
+        listOffer.add(new Offer(R.drawable.coldbrewlatte1,"Miễn phí 1 Cold Brew Latte", 549));
+        listOffer.add(new Offer(R.drawable.dailycookie7, "Miễn phí 100gr Daily Cookie", 499));
 
         return listOffer;
     }

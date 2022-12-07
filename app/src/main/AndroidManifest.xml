@@ -95,6 +95,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -114,7 +115,21 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".FragmentButterIDChoosePackageVanilla"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".FragmentButterIDChooseCheese"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".FragmentButterIDChooseCheeseVanilla"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
@@ -137,6 +152,7 @@
         <activity
             android:name=".ActivityButterID"
             android:exported="true">
+
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -287,11 +303,6 @@
         <activity
             android:name=".FragementEventNoel"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
             <meta-data
                 android:name="android.app.lib_name"

@@ -142,6 +142,13 @@ public class CheckoutActivity extends AppCompatActivity {
             }
         });
 
+        binding.imvBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
     }
 
     private void addData() {

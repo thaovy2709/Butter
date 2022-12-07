@@ -35,7 +35,7 @@ public class FragmentButterIDChooseDip extends AppCompatActivity {
     }
 
     private void manipulateMenu() {
-        binding.bottomNavigation.setSelectedItemId(R.id.bottom_navigation);
+        binding.bottomNavigation.setSelectedItemId(R.id.nav_ButterId);
         binding.bottomNavigation.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -80,7 +80,7 @@ public class FragmentButterIDChooseDip extends AppCompatActivity {
                 llVaniDip.setBackground(null);
                 imvCookie.setImageResource(R.drawable.dipchoco);
 
-                btnNext.setBackgroundColor(FragmentButterIDChooseDip.this.getResources().getColor(R.color.secondary_4));
+                btnNext.setBackgroundResource(R.drawable.item_checkouttag);
 
                 btnNext.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -100,13 +100,13 @@ public class FragmentButterIDChooseDip extends AppCompatActivity {
                 llChocoDip.setBackground(null);
                 imvCookie.setImageResource(R.drawable.dipvani);
 
-                btnNext.setBackgroundColor(FragmentButterIDChooseDip.this.getResources().getColor(R.color.secondary_4));
+                btnNext.setBackgroundResource(R.drawable.item_checkouttag);
 
                 btnNext.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         Intent intent = new Intent(FragmentButterIDChooseDip.this, FragmentButterIDChooseCheeseVanilla.class);
-                        intent.putExtra("step3", R.drawable.dipvani);
+                        intent.putExtra("step3b", R.drawable.dipvani);
                         startActivity(intent);
                     }
                 });

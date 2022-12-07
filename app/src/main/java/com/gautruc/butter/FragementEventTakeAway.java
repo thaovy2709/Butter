@@ -31,5 +31,12 @@ public class FragementEventTakeAway extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        binding.btnUseVoucher.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FragementEventTakeAway.this, MenuScreenActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

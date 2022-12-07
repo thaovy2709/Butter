@@ -41,5 +41,13 @@ public class FragementEventHalloween extends AppCompatActivity {
             }
         });
 
+        binding.btnUseVoucher.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FragementEventHalloween.this, MenuScreenActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

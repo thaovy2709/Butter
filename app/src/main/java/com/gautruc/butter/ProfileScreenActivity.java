@@ -1,12 +1,12 @@
 package com.gautruc.butter;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.gautruc.butter.databinding.ActivityProfileScreenBinding;
 
@@ -67,7 +67,7 @@ public class ProfileScreenActivity extends AppCompatActivity {
             }
         });
 
-        binding.imvNext.setOnClickListener(new View.OnClickListener() {
+        binding.lnProfileInf.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ProfileScreenActivity.this, FragmentPersonalInformation.class);

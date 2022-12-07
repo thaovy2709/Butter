@@ -31,5 +31,12 @@ public class FragementEventNoel extends AppCompatActivity {
                 finish();
             }
         });
+        binding.btnUseVoucher.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FragementEventNoel.this, MenuScreenActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

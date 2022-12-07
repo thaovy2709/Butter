@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginLeft="8dp"
+            android:layout_marginLeft="18dp"
             android:layout_gravity="center"
             android:layout_marginStart="4dp"
             android:layout_marginTop="4dp">
@@ -48,6 +48,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:textSize="10sp"
+                android:fontFamily="@font/quicksand_regular"
                 android:text="@string/detail_blog1" />
 
             <TextView

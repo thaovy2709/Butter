@@ -265,12 +265,13 @@
 
         <Button
             android:id="@+id/btn_OrderSuccess"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:cornerRadius="10dp"
+            android:layout_width="193dp"
+            android:layout_height="34dp"
+            android:background="@drawable/item_checkouttag"
             android:layout_gravity="center"
             android:layout_marginTop="16dp"
             android:text="ĐẶT HÀNG THÀNH CÔNG"
+            android:textColor="@color/neutral_1"
             android:backgroundTint="@color/secondary_4"/>
 
     <View
@@ -377,29 +378,24 @@
 
             </LinearLayout>
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:cornerRadius="10dp"
-                android:layout_marginStart="84dp"
-                android:backgroundTint="@color/primary_3"
+                android:layout_marginStart="130dp"
                 android:text="200.000"
+                android:background="@drawable/item_buttonorder_checkout"
                 android:textColor="@color/neutral_5"
                 android:fontFamily="@font/quicksand_bold"
-                android:textSize="12dp"
-                app:icon="@drawable/next"
-                app:iconGravity="end"
-                app:iconTint="@color/neutral_5"/>
+                android:drawableLeft="@drawable/item_buttonorder_checkout"/>
 
         </LinearLayout>
 
     </LinearLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="bottom"
-        android:layout_marginTop="95dp">
+        android:layout_height="match_parent">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_navigation"
@@ -408,12 +404,14 @@
             android:layout_gravity="bottom"
             android:background="#FFFFFF"
             app:itemIconTint="@color/color_menu_nav"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
             app:itemTextAppearanceActive="@style/MyBottomNavigationView.TextAppearance"
             app:itemTextAppearanceInactive="@style/MyBottomNavigationView.TextAppearance"
             app:itemTextColor="@color/color_menu_nav"
             app:menu="@menu/menunavigation" />
 
-    </LinearLayout>
+    </RelativeLayout>
 
 
 

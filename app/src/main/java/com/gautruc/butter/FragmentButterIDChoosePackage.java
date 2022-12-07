@@ -44,7 +44,7 @@ public class FragmentButterIDChoosePackage extends AppCompatActivity {
     }
 
     private void manipulateMenu() {
-        binding.bottomNavigation.setSelectedItemId(R.id.bottom_navigation);
+        binding.bottomNavigation.setSelectedItemId(R.id.nav_ButterId);
         binding.bottomNavigation.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -90,6 +90,8 @@ public class FragmentButterIDChoosePackage extends AppCompatActivity {
                 llBoxkieng6c.setBackground(null);
                 imvCookie.setImageResource(R.drawable.bag1);
 
+                btnConfirmOrder.setBackgroundResource(R.drawable.item_checkouttag);
+
                 btnConfirmOrder.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
@@ -109,6 +111,7 @@ public class FragmentButterIDChoosePackage extends AppCompatActivity {
                 llBoxgiay6c.setBackground(null);
                 llBoxkieng6c.setBackground(null);
                 imvCookie.setImageResource(R.drawable.box1);
+                btnConfirmOrder.setBackgroundResource(R.drawable.item_checkouttag);
 
                 btnConfirmOrder.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -130,6 +133,8 @@ public class FragmentButterIDChoosePackage extends AppCompatActivity {
                 llBoxkieng6c.setBackground(null);
                 imvCookie.setImageResource(R.drawable.boxgiay6);
 
+                btnConfirmOrder.setBackgroundResource(R.drawable.item_checkouttag);
+
                 btnConfirmOrder.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
@@ -149,6 +154,8 @@ public class FragmentButterIDChoosePackage extends AppCompatActivity {
                 llBox1c.setBackground(null);
                 llBoxgiay6c.setBackground(null);
                 imvCookie.setImageResource(R.drawable.boxkinh6);
+
+                btnConfirmOrder.setBackgroundResource(R.drawable.item_checkouttag);
 
                 btnConfirmOrder.setOnClickListener(new View.OnClickListener() {
                     @Override

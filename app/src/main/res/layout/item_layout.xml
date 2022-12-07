@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:id="@+id/layout_productHomepage"
     android:background="@drawable/item_homepageproduct"
-    android:layout_width="115dp"
+    android:layout_width="120dp"
     android:layout_height="wrap_content"
     android:layout_margin="8dp">
 
@@ -13,14 +13,23 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/imv_Product"
-        android:layout_width="115dp"
-        android:layout_height="115dp"
-        android:src="@drawable/dailycookie"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="120dp"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:id="@+id/imv_Product"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dailycookie"/>
+
+    </androidx.cardview.widget.CardView>
+
+
 
     <LinearLayout
-        android:layout_width="115dp"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:paddingRight="8dp"
@@ -59,13 +68,13 @@
                 android:textColor="@color/neutral_5"/>
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/txt_Stock"
+                android:gravity="end"
                 android:text="Còn 50 sản phẩm"
                 android:fontFamily="@font/quicksand_regular"
                 android:textSize="8sp"
-                android:layout_gravity="end"
                 android:layout_marginLeft="7dp"
                 android:textColor="@color/neutral_5"/>
 
@@ -82,6 +91,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/txt_Price"
                 android:text="35.000"
+                android:layout_gravity="center"
+                android:gravity="center"
                 android:fontFamily="@font/quicksand_bold"
                 android:textSize="10sp"
                 android:textColor="@color/neutral_5"/>
@@ -92,8 +103,8 @@
                 android:id="@+id/txt_oldPrice"
                 android:text="@string/line"
                 android:fontFamily="@font/quicksand_medium"
-                android:textSize="10sp"
-                android:layout_gravity="end"
+                android:textSize="6sp"
+                android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
                 android:textColor="@color/neutral_4"/>
 
@@ -101,8 +112,9 @@
 
         <Button
             android:layout_width="90dp"
-            android:layout_height="20dp"
+            android:layout_height="25dp"
             android:id="@+id/btn_Add"
+            android:layout_gravity="center"
             android:text="Thêm"
             android:textSize="12sp"
             android:textColor="@color/secondary_5"
@@ -110,7 +122,7 @@
             android:fontFamily="@font/quicksand_bold"
             android:background="@drawable/item_homepagebutton"
             android:layout_marginTop="4dp"
-            android:layout_marginBottom="8dp"/>
+            android:layout_marginBottom="10dp"/>
 
     </LinearLayout>
 

@@ -38,7 +38,7 @@ public class ActivityButterID extends AppCompatActivity {
     }
 
     private void manipulateMenu() {
-        binding.bottomNavigation.setSelectedItemId(R.id.bottom_navigation);
+        binding.bottomNavigation.setSelectedItemId(R.id.nav_ButterId);
         binding.bottomNavigation.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -81,7 +81,7 @@ public class ActivityButterID extends AppCompatActivity {
             public void onClick(View view) {
                 llSizeLarge.setBackgroundResource(R.drawable.choosenframe);
                 llSizeMini.setBackground(null);
-                btnNext.setBackgroundColor(ActivityButterID.this.getResources().getColor(R.color.secondary_4));
+                btnNext.setBackgroundResource(R.drawable.item_checkouttag);
 
                 btnNext.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -98,7 +98,7 @@ public class ActivityButterID extends AppCompatActivity {
             public void onClick(View view) {
                 llSizeMini.setBackgroundResource(R.drawable.choosenframe);
                 llSizeLarge.setBackground(null);
-                btnNext.setBackgroundColor(ActivityButterID.this.getResources().getColor(R.color.secondary_4));
+                btnNext.setBackgroundResource(R.drawable.item_checkouttag);
 
                 btnNext.setOnClickListener(new View.OnClickListener() {
                     @Override

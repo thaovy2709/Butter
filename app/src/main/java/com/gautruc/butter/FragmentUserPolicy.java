@@ -23,8 +23,7 @@ public class FragmentUserPolicy extends AppCompatActivity {
         binding.imvBackFromPolicyToProfileScreen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FragmentUserPolicy.this, ProfileScreenActivity.class);
-                startActivity(intent);
+                finish();
             }
         });
     }

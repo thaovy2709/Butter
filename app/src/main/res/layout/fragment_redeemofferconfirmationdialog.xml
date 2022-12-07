@@ -30,7 +30,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
         android:orientation="horizontal"
         android:layout_marginTop="16dp"
         android:gravity="center">
@@ -38,35 +38,33 @@
         <Button
             android:id="@+id/btn_HuyXacNhanOffer"
             android:layout_width="140dp"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:background="@drawable/item_cancel_success"
             android:text="Hủy"
             android:textAllCaps="false"
             android:textColor="@color/neutral_5"
             android:textSize="16dp"
-            app:cornerRadius="10dp"
             android:layout_marginRight="16dp"
             android:layout_marginLeft="16dp"/>
 
         <Button
             android:id="@+id/btn_XacNhanOffer"
             android:layout_width="140dp"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_marginRight="16dp"
             android:background="@drawable/item_homepage_butterid"
             android:text="Xác nhận"
             android:textAllCaps="false"
             android:textColor="@color/neutral_5"
             android:textSize="16dp"
-            app:cornerRadius="10dp"
-            android:gravity="center"/>
+            android:layout_gravity="center"/>
     </LinearLayout>
 
     <ImageView
         android:layout_width="132dp"
         android:layout_height="132dp"
         android:layout_gravity="center"
-        android:src="@drawable/hello"
         android:layout_marginTop="16dp"
+        android:src="@drawable/hello"
         android:layout_marginBottom="16dp"/>
 </LinearLayout>

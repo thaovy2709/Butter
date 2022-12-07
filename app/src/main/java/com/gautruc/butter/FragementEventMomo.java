@@ -32,5 +32,13 @@ public class FragementEventMomo extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        binding.btnUseVoucher.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FragementEventMomo.this, MenuScreenActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

@@ -46,6 +46,7 @@
         android:background="#E3E4E5"/>
 
     <LinearLayout
+        android:id="@+id/ln_ProfileInf"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -260,9 +261,9 @@
 
         <ImageView
             android:id="@+id/imv_Rate"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginLeft="25dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="24dp"
             android:src="@drawable/star" />
 
         <TextView
@@ -270,7 +271,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginLeft="16dp"
+            android:layout_marginLeft="13dp"
             android:fontFamily="@font/quicksand_regular"
             android:text="Đánh giá Butter"
             android:textSize="16sp"/>

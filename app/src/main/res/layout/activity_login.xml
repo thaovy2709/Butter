@@ -14,11 +14,11 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:clickable="true"
-        android:fontFamily="@font/quicksand_medium"
+        android:fontFamily="@font/quicksand_bold"
         android:gravity="end"
         android:text="Bỏ qua"
         android:textColor="@color/neutral_4"
-        android:textSize="16dp" />
+        android:textSize="20dp" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"

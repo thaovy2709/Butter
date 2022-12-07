@@ -37,51 +37,11 @@ public class ProductDetailActivity extends AppCompatActivity {
         binding = ActivityProductDetailBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        manipulateMenu();
         addEvents();
 
         ViewPagerAdapter adapter = new ViewPagerAdapter(this, images);
         binding.viewPager.setAdapter(adapter);
 
-    }
-
-    private void manipulateMenu() {
-        binding.bottomNavigation.setSelectedItemId(R.id.bottom_navigation);
-
-        binding.bottomNavigation.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()){
-                    case R.id.nav_Menu:
-                        startActivity(new Intent(getApplicationContext(), MenuScreenActivity.class));
-                        finish();
-                        overridePendingTransition(0,0);
-                        return true;
-                    case R.id.nav_Homepage:
-                        startActivity(new Intent(getApplicationContext(), HomepageActivity.class));
-                        finish();
-                        overridePendingTransition(0,0);
-                        return true;
-                    case R.id.nav_ButterId:
-                        startActivity(new Intent(getApplicationContext(), ActivityButterID.class));
-                        finish();
-                        overridePendingTransition(0,0);
-                        return true;
-                    case R.id.nav_Promotion:
-                        startActivity(new Intent(getApplicationContext(), PromotionScreenActivity.class));
-                        finish();
-                        overridePendingTransition(0,0);
-                        return true;
-                    case R.id.nav_Order:
-                        startActivity(new Intent(getApplicationContext(), OngoingScreenActivity.class));
-                        finish();
-                        overridePendingTransition(0,0);
-                        return true;
-
-                }
-                return false;
-            }
-        });
     }
 
 
