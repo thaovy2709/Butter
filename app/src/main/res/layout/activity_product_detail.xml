@@ -229,7 +229,7 @@
                 android:fontFamily="@font/quicksand_light"/>
 
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -277,16 +277,17 @@
                     <Button
                         android:id="@+id/btnAdd"
                         android:layout_width="180dp"
-                        android:layout_height="40dp"
+                        android:layout_height="50dp"
                         android:text="@string/dathang"
                         android:textColor="@color/neutral_5"
+                        android:layout_marginEnd="8dp"
                         android:textSize="20dp"
                         android:background="@drawable/yellowbutton"
                         android:fontFamily="@font/quicksand_bold"/>
 
                 </LinearLayout>
 
-            </RelativeLayout>
+            </LinearLayout>
 
         </LinearLayout>
 
