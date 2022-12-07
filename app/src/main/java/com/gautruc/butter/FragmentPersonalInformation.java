@@ -58,8 +58,7 @@ public class FragmentPersonalInformation extends AppCompatActivity {
         binding.imvBackFromPersonalInfToProfileScreen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FragmentPersonalInformation.this, ProfileScreenActivity.class);
-                startActivity(intent);
+                finish();
             }
         });
     }
