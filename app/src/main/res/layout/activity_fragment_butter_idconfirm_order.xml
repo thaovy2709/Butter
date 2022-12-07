@@ -270,7 +270,7 @@
             android:background="@drawable/item_checkouttag"
             android:layout_gravity="center"
             android:layout_marginTop="16dp"
-            android:text="ĐẶT HÀNG THÀNH CÔNG"
+            android:text="THANH TOÁN NGAY"
             android:textColor="@color/neutral_1"
             android:backgroundTint="@color/secondary_4"/>
 
@@ -341,7 +341,8 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:id="@+id/ll_confirmOrder">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

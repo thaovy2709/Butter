@@ -112,6 +112,13 @@ public class FragmentButterIDConfirmOrder extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        binding.llConfirmOrder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FragmentButterIDConfirmOrder.this, MenuScreenWithCartActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void linkViews() {
