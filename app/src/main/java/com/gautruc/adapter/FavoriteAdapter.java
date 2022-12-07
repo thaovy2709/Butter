@@ -1,16 +1,19 @@
 package com.gautruc.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.gautruc.butter.FavoriteDishesListScreen;
+import com.gautruc.butter.ProductDetailActivity;
 import com.gautruc.butter.R;
 import com.gautruc.model.FavoriteDish;
 
@@ -45,7 +48,13 @@ public class FavoriteAdapter extends RecyclerView.Adapter<FavoriteAdapter.Favori
         holder.txtPriceSale.setText(favoriteDish.getPriceSale());
         holder.txtRate.setText(favoriteDish.getRate());
         holder.txtNameDish.setText(favoriteDish.getNameDish());
-
+        holder.ll_favorite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), ProductDetailActivity.class);
+                v.getContext().startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -59,6 +68,7 @@ public class FavoriteAdapter extends RecyclerView.Adapter<FavoriteAdapter.Favori
 
         private ImageView imvDish;
         private TextView txtNameDish, txtRate, txtQuality, txtPriceSale, txtPrice;
+        private LinearLayout ll_favorite;
 
         public FavoriteViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -68,7 +78,7 @@ public class FavoriteAdapter extends RecyclerView.Adapter<FavoriteAdapter.Favori
             txtQuality = itemView.findViewById(R.id.txtQuality);
             txtPriceSale = itemView.findViewById(R.id.txtPriceSale);
             txtPrice = itemView.findViewById(R.id.txtPrice);
-
+            ll_favorite = itemView.findViewById(R.id.ll_favorite);
         }
     }
 

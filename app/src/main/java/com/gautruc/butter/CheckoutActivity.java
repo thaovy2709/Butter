@@ -148,7 +148,7 @@ public class CheckoutActivity extends AppCompatActivity {
         //sản phẩm đã chọn
         itemCheckout = new ArrayList<>();
         itemCheckout.add(new productCheckout(R.drawable.dailycookie, "Daily Cookie", 70000, 80000, 2));
-        itemCheckout.add(new productCheckout(R.drawable.cookie, "Cookie Oatmeal", 40000, 50000, 1));
+        itemCheckout.add(new productCheckout(R.drawable.cookieoatmeal1, "Cookie Oatmeal", 40000, 50000, 1));
 
         adapter = new productCheckoutAdapter(this, itemCheckout, this);
 

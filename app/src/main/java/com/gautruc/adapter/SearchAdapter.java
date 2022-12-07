@@ -1,15 +1,18 @@
 package com.gautruc.adapter;
 
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.gautruc.butter.ProductDetailActivity;
 import com.gautruc.butter.R;
 import com.gautruc.model.search;
 
@@ -26,6 +29,7 @@ public class SearchAdapter extends RecyclerView.Adapter<SearchAdapter.SearchView
         public TextView txtName;
         public TextView txtIngredients;
         public TextView txtPrice;
+        LinearLayout ll_search;
 
         public SearchViewHolder(View itemView) {
             super(itemView);
@@ -33,6 +37,7 @@ public class SearchAdapter extends RecyclerView.Adapter<SearchAdapter.SearchView
             txtName = itemView.findViewById(R.id.txt_SearchName);
             txtIngredients = itemView.findViewById(R.id.txt_Ingredients);
             txtPrice = itemView.findViewById(R.id.txt_Price);
+            ll_search = itemView.findViewById(R.id.ll_search);
         }
     }
 
@@ -62,6 +67,13 @@ public class SearchAdapter extends RecyclerView.Adapter<SearchAdapter.SearchView
         holder.txtName.setText(search.getProductName());
         holder.txtIngredients.setText(search.getProductIngredient());
         holder.txtPrice.setText(search.getProductPrice());
+        holder.ll_search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), ProductDetailActivity.class);
+                v.getContext().startActivity(intent);
+            }
+        });
     }
 
     @Override

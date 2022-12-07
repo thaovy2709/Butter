@@ -152,11 +152,11 @@ public class OTPVerifyFragment extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (edtCode1.getText().toString().trim().isEmpty()
-                        && edtCode2.getText().toString().trim().isEmpty()
-                        && edtCode3.getText().toString().trim().isEmpty()
-                        && edtCode4.getText().toString().trim().isEmpty()
-                        && edtCode5.getText().toString().trim().isEmpty()
-                        && edtCode6.getText().toString().trim().isEmpty()) {
+                        || edtCode2.getText().toString().trim().isEmpty()
+                        || edtCode3.getText().toString().trim().isEmpty()
+                        || edtCode4.getText().toString().trim().isEmpty()
+                        || edtCode5.getText().toString().trim().isEmpty()
+                        || edtCode6.getText().toString().trim().isEmpty()) {
                     Toast.makeText(OTPVerifyFragment.this, "OTP Không hợp lệ", Toast.LENGTH_SHORT).show();
                     return;
                 } else {

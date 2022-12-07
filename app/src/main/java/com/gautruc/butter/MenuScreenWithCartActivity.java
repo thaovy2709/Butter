@@ -213,6 +213,39 @@ public class MenuScreenWithCartActivity extends AppCompatActivity {
 
     private void addEvents() {
 
+        binding.imvProfile1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuScreenWithCartActivity.this, ProfileScreenActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        binding.imvNotification1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuScreenWithCartActivity.this, NotificationList.class);
+                startActivity(intent);
+            }
+        });
+
+        binding.imvWishlist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuScreenWithCartActivity.this, FavoriteDishesListScreen.class);
+                startActivity(intent);
+            }
+        });
+
+        binding.imvSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuScreenWithCartActivity.this, FragmentSearchScreen.class);
+                startActivity(intent);
+            }
+        });
+
+
         llKhuyenMai.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

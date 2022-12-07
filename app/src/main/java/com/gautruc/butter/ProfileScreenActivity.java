@@ -33,6 +33,14 @@ public class ProfileScreenActivity extends AppCompatActivity {
             }
         });
 
+        binding.lnMonYeuThich.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ProfileScreenActivity.this, FavoriteDishesListScreen.class);
+                startActivity(intent);
+            }
+        });
+
         //Bấm "Đánh giá Butter" -> Hiện ra app trên CH Play
         binding.txtRate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,6 +81,13 @@ public class ProfileScreenActivity extends AppCompatActivity {
             }
         });
         binding.imvDonHang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (ProfileScreenActivity.this, OngoingScreenActivity.class);
+                startActivity(intent);
+            }
+        });
+        binding.lnDonHang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent (ProfileScreenActivity.this, OngoingScreenActivity.class);

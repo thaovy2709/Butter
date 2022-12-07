@@ -89,8 +89,8 @@ public class FragmentSearchScreen extends AppCompatActivity {
         btnCroissant.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Intent intent = new Intent (FragmentSearchScreen.this, CroissantDetailProduct.class);
-                //startActivity(intent);
+                Intent intent = new Intent (FragmentSearchScreen.this, ProductDetailActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -98,8 +98,8 @@ public class FragmentSearchScreen extends AppCompatActivity {
         btnOreoCheese.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Intent intent = new Intent (FragmentSearchScreen.this, OreoCheeseDetailProduct.class);
-                //startActivity(intent);
+                Intent intent = new Intent (FragmentSearchScreen.this, ProductDetailActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -107,8 +107,8 @@ public class FragmentSearchScreen extends AppCompatActivity {
         btnMatchaLatte.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Intent intent = new Intent (FragmentSearchScreen.this, MatchaLatteCDetailProduct.class);
-                //startActivity(intent);
+                Intent intent = new Intent (FragmentSearchScreen.this, ProductDetailActivity.class);
+                startActivity(intent);
             }
         });
     }

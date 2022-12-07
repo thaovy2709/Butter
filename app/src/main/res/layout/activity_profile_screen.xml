@@ -64,7 +64,7 @@
             android:layout_marginLeft="10dp"
             android:fontFamily="@font/quicksand_semibold"
             android:text="Huỳnh Phạm Thủy Tiên"
-            android:textSize="16sp" />
+            android:textSize="18sp" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -249,7 +249,7 @@
             android:layout_marginLeft="16dp"
             android:fontFamily="@font/quicksand_regular"
             android:text="Điều khoản sử dụng"
-            android:textSize="12sp" />
+            android:textSize="16sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -273,7 +273,7 @@
             android:layout_marginLeft="16dp"
             android:fontFamily="@font/quicksand_regular"
             android:text="Đánh giá Butter"
-            android:textSize="12sp"/>
+            android:textSize="16sp"/>
     </LinearLayout>
 
     <View

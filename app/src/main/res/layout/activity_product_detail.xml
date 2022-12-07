@@ -16,28 +16,9 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <!--        <ImageView-->
-            <!--            android:id="@+id/imv_back"-->
-            <!--            android:layout_width="wrap_content"-->
-            <!--            android:layout_height="wrap_content"-->
-            <!--            android:src="@drawable/back"-->
-            <!--            android:layout_marginTop="16dp"/>-->
-
-            <!--        <ImageView-->
-            <!--            android:layout_width="match_parent"-->
-            <!--            android:layout_height="270dp"-->
-            <!--            android:src="@drawable/cookiedaily1"/>-->
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-
-<!--                <ImageView-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="260dp"-->
-<!--                    android:layout_alignParentTop="true"-->
-<!--                    android:layout_centerVertical="true"-->
-<!--                    android:layout_marginTop="-1dp"-->
-<!--                    android:src="@drawable/cookiedailyy" />-->
 
                 <androidx.viewpager.widget.ViewPager
                     android:id="@+id/viewPager"
@@ -311,18 +292,23 @@
 
     </ScrollView>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        app:itemIconTint="@color/color_menu_nav"
-        app:itemTextColor="@color/color_menu_nav"
-        android:background="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:itemTextAppearanceActive="@style/MyBottomNavigationView.TextAppearance"
-        app:itemTextAppearanceInactive="@style/MyBottomNavigationView.TextAppearance"
-        app:menu="@menu/menunavigation" />
+        android:gravity="bottom">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#FFFFFF"
+            app:itemIconTint="@color/color_menu_nav"
+            app:itemTextAppearanceActive="@style/MyBottomNavigationView.TextAppearance"
+            app:itemTextAppearanceInactive="@style/MyBottomNavigationView.TextAppearance"
+            app:itemTextColor="@color/color_menu_nav"
+            app:menu="@menu/menunavigation" />
+
+    </LinearLayout>
 
 </LinearLayout>

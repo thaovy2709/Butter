@@ -4,6 +4,7 @@ package com.gautruc.butter;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -29,7 +30,6 @@ public class ActivityButterID extends AppCompatActivity {
 
         binding = ActivityButterIdBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        setContentView(R.layout.activity_butter_id);
 
         linkView();
         manipulateMenu();
@@ -107,6 +107,35 @@ public class ActivityButterID extends AppCompatActivity {
                         startActivity(intent);
                     }
                 });
+            }
+        });
+
+        binding.imvNotification1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ActivityButterID.this, NotificationList.class);
+                startActivity(intent);
+            }
+        });
+        binding.imvSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ActivityButterID.this, FragmentSearchScreen.class);
+                startActivity(intent);
+            }
+        });
+        binding.imvWishlist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ActivityButterID.this, FavoriteDishesListScreen.class);
+                startActivity(intent);
+            }
+        });
+        binding.imvProfile1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ActivityButterID.this, ProfileScreenActivity.class);
+                startActivity(intent);
             }
         });
 

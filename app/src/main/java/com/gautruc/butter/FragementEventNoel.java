@@ -28,8 +28,7 @@ public class FragementEventNoel extends AppCompatActivity {
         binding.imvBackNoel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(FragementEventNoel.this, HomepageEvent.class);
-                startActivity(intent);
+                finish();
             }
         });
     }

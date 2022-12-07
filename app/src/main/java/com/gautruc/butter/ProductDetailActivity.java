@@ -3,15 +3,18 @@ package com.gautruc.butter;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.gautruc.adapter.ViewPagerAdapter;
 import com.gautruc.butter.databinding.ActivityProductDetailBinding;
+import com.google.android.material.navigation.NavigationBarView;
 
 import org.w3c.dom.Text;
 
@@ -34,12 +37,51 @@ public class ProductDetailActivity extends AppCompatActivity {
         binding = ActivityProductDetailBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-
+        manipulateMenu();
         addEvents();
 
         ViewPagerAdapter adapter = new ViewPagerAdapter(this, images);
         binding.viewPager.setAdapter(adapter);
 
+    }
+
+    private void manipulateMenu() {
+        binding.bottomNavigation.setSelectedItemId(R.id.bottom_navigation);
+
+        binding.bottomNavigation.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()){
+                    case R.id.nav_Menu:
+                        startActivity(new Intent(getApplicationContext(), MenuScreenActivity.class));
+                        finish();
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.nav_Homepage:
+                        startActivity(new Intent(getApplicationContext(), HomepageActivity.class));
+                        finish();
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.nav_ButterId:
+                        startActivity(new Intent(getApplicationContext(), ActivityButterID.class));
+                        finish();
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.nav_Promotion:
+                        startActivity(new Intent(getApplicationContext(), PromotionScreenActivity.class));
+                        finish();
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.nav_Order:
+                        startActivity(new Intent(getApplicationContext(), OngoingScreenActivity.class));
+                        finish();
+                        overridePendingTransition(0,0);
+                        return true;
+
+                }
+                return false;
+            }
+        });
     }
 
 
@@ -77,8 +119,7 @@ public class ProductDetailActivity extends AppCompatActivity {
         binding.imvBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent2 = new Intent(ProductDetailActivity.this, MenuScreenActivity.class);
-                startActivity(intent2);
+                finish();
             }
         });
 
