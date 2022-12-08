@@ -67,7 +67,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Nhập tên của bạn"
+            android:hint="Huỳnh Phạm Thủy Tiên"
             android:padding="8dp"
             android:textColor="@color/neutral_4"
             android:textSize="14sp"
@@ -95,7 +95,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Nhập số điện thoại của bạn"
+            android:hint="0972 922 814"
             android:padding="8dp"
             android:textColor="@color/neutral_4"
             android:textSize="14sp"
@@ -133,6 +133,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:text="Nữ"
+            android:checked="true"
             android:textSize="14sp"
             android:buttonTint="@color/neutral_5"
             android:fontFamily="@font/quicksand_bold"/>
@@ -170,7 +171,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="4dp"
-            android:hint="Chọn ngày sinh của bạn"
+            android:hint="22/03/2000"
             android:textColor="@color/neutral_4"
             android:textSize="14sp"
             android:fontFamily="@font/quicksand_regular"/>

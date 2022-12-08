@@ -272,6 +272,7 @@
             android:layout_marginTop="16dp"
             android:text="THANH TOÁN NGAY"
             android:textColor="@color/neutral_1"
+            android:fontFamily="@font/quicksand_bold"
             android:backgroundTint="@color/secondary_4"/>
 
     <View
