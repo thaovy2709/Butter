@@ -102,6 +102,7 @@
                     android:textSize="12sp"
                     android:layout_marginTop="2dp"
                     android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/quicksand_semibold"
                     android:textAlignment="textEnd"/>
 
             </LinearLayout>
@@ -152,6 +153,7 @@
                     android:layout_height="match_parent"
                     android:text="@string/more"
                     android:textColor="@color/primary_5"
+                    android:fontFamily="@font/quicksand_semibold"
                     android:textSize="12sp"
                     android:layout_marginTop="2dp"
                     android:layout_marginEnd="20dp"
@@ -207,6 +209,7 @@
                     android:textSize="12sp"
                     android:layout_marginTop="2dp"
                     android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/quicksand_semibold"
                     android:textAlignment="textEnd"/>
             </LinearLayout>
         </LinearLayout>
@@ -259,6 +262,7 @@
                     android:textSize="12sp"
                     android:layout_marginTop="2dp"
                     android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/quicksand_semibold"
                     android:textAlignment="textEnd"/>
             </LinearLayout>
         </LinearLayout>
