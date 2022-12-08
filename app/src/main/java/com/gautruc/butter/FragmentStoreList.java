@@ -34,8 +34,7 @@ public class FragmentStoreList extends AppCompatActivity {
         binding.imvBackFromStoreListToProfileScreen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FragmentStoreList.this, ProfileScreenActivity.class);
-                startActivity(intent);
+                finish();
             }
         });
 
