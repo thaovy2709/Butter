@@ -298,8 +298,7 @@
             android:textColor="@color/neutral_1"
             android:drawableTint="@color/neutral_1"
             android:drawableLeft="@drawable/back"
-            android:fontFamily="@font/quicksand_bold"
-            android:padding="8dp"/>
+            android:fontFamily="@font/quicksand_bold" />
 
         <Button
             android:id="@+id/btn_ConfirmOrder"
@@ -313,7 +312,6 @@
             android:text="ĐẶT HÀNG"
             android:textColor="@color/neutral_1"
             android:drawableTint="@color/neutral_1"
-            android:padding="8dp"
             android:fontFamily="@font/quicksand_bold"
             android:drawableEnd="@drawable/next"/>
     </LinearLayout>

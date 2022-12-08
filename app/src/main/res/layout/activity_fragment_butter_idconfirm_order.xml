@@ -366,6 +366,8 @@
                         android:text="Giao đến"
                         android:layout_marginStart="8dp"
                         android:textSize="12dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/quicksand_semibold"
                         android:textColor="@color/neutral_4"/>
                 </LinearLayout>
 
@@ -381,11 +383,12 @@
             </LinearLayout>
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
                 app:cornerRadius="10dp"
-                android:layout_marginStart="130dp"
+                android:layout_marginStart="120dp"
                 android:text="200.000"
+                android:layout_gravity="center"
                 android:background="@drawable/item_buttonorder_checkout"
                 android:textColor="@color/neutral_5"
                 android:fontFamily="@font/quicksand_bold"

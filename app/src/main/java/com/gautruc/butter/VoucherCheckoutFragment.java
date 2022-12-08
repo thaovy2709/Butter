@@ -47,6 +47,10 @@ public class VoucherCheckoutFragment extends AppCompatActivity {
         binding.btnApDung.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (binding.edtVoucherCode.getText().toString().trim().isEmpty()){
+                    Toast.makeText(VoucherCheckoutFragment.this, "Bạn chưa nhập mã khuyến mãi!", Toast.LENGTH_SHORT).show();
+                    return;
+                }
                 Toast.makeText(VoucherCheckoutFragment.this, "Áp dụng mã thành công", Toast.LENGTH_SHORT).show();
                 finish();
             }

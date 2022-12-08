@@ -239,8 +239,7 @@
             android:textColor="@color/neutral_1"
             android:drawableTint="@color/neutral_1"
             android:fontFamily="@font/quicksand_bold"
-            android:drawableLeft="@drawable/back"
-            android:padding="8dp"/>
+            android:drawableLeft="@drawable/back" />
 
         <Button
             android:id="@+id/btn_Next"
@@ -255,7 +254,6 @@
             android:textColor="@color/neutral_1"
             android:drawableTint="@color/neutral_1"
             android:fontFamily="@font/quicksand_bold"
-            android:padding="8dp"
             android:drawableEnd="@drawable/next"/>
 
     </LinearLayout>
